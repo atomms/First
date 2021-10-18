@@ -43,7 +43,6 @@
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:alpha="0.8"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintTop_toBottomOf="@id/til1"
@@ -68,10 +67,13 @@
     <Button
         android:id="@+id/button"
         android:text="Vaccinate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/til2"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
-        style="@style/mybutton"
+        android:textColor="@color/purple_500"
+        android:backgroundTint="@drawable/button_custom"
 
         />
 
