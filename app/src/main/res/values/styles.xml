@@ -4,13 +4,18 @@
     <style name="mybutton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/teal_200</item>
+        <item name="cornerRadius">2dp</item>
+       <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/purple_500</item>
+
+
     </style>
 
-    <style name="buttoninverse">
+    <style name="buttoninverse" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:layout_width">0dp</item>
-        <item name="android:textColor">@color/purple_500</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">2dp</item>
+        <item name="strokeColor">@android:color/white</item>
     </style>
 </resources>
