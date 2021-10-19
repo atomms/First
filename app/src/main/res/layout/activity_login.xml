@@ -4,8 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".LoginActivity">
 
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logo"
+        android:src="@drawable/girl"
+        android:scaleType="fitStart"
+        >
+
+
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@drawable/gradient">
+    </View>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_thunder"
+
+        ></ImageView>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
@@ -13,16 +44,16 @@
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
         app:startIconDrawable="@drawable/ic_corona_foreground"
-
         >
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="username"></EditText>
+            android:background="@color/whitealpha"
+            android:hint="username"
+            ></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,13 +62,12 @@
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:alpha="0.8"
-        android:background="@android:color/white"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintTop_toBottomOf="@id/til1"
         app:startIconDrawable="@drawable/ic_lock_foreground"
         app:passwordToggleEnabled="true"
+        android:alpha="0.8"
         >
 
         <EditText
@@ -45,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="password"
+            android:background="@color/whitealpha"
             android:inputType="textPassword"
             android:maxLines="1" />
 
