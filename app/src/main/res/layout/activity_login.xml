@@ -14,8 +14,7 @@
         android:id="@+id/logo"
         android:src="@drawable/girl"
         android:scaleType="fitStart"
-        >
-
+        />
 
     <ImageView
         android:id="@+id/imageView"
