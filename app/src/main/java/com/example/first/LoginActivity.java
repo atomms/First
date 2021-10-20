@@ -1,6 +1,7 @@
 package com.example.first;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,14 +26,17 @@ public class LoginActivity extends AppCompatActivity {
         ImageView mGirl = findViewById(R.id.girl);
 
         Glide.with(this)
+
                 .load(R.drawable.girl)
                 .transition(DrawableTransitionOptions.withCrossFade(500))
-                .into(mGirl);
 
+//                .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
 //                .centerCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
 //                .circleCrop()
-//                .diskCacheStrategy(DiskCacheStrategy.NONE)
+
+                .into(mGirl);
+
     }
 
     // Method for Vaccinate button
