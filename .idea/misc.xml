@@ -5,11 +5,9 @@
       <map>
         <entry key="../../.gradle/caches/transforms-3/8190198988f5dc1a233e0c21b4a74ad8/transformed/appcompat-1.2.0/res/drawable/abc_btn_default_mtrl_shape.xml" value="0.2140625" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/button_custom.xml" value="0.3828125" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_corona_background.xml" value="0.3828125" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_corona_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_lock_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/button_custom.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.2140625" />
@@ -17,13 +15,13 @@
         <entry key="app/src/main/res/drawable/ic_lock_foreground.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/ic_thunder.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/thunder_background.xml" value="0.2140625" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/thunder.xml" value="0.2140625" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/thunder_round.xml" value="0.2140625" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
