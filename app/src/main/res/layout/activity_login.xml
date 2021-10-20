@@ -83,16 +83,16 @@
 
     <Button
         android:id="@+id/button"
-        android:text="Vaccinate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/til2"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        android:textColor="@color/purple_500"
         android:backgroundTint="@color/button_custom"
+        android:onClick="onClick"
+        android:text="Vaccinate"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
 
-        />
+        app:layout_constraintTop_toBottomOf="@id/til2" />
 
     <Button
         android:id="@+id/buttoninverse"
