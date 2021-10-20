@@ -73,7 +73,7 @@
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         android:textColor="@color/purple_500"
-        android:backgroundTint="@drawable/button_custom"
+        android:backgroundTint="@color/button_custom"
 
         />
 
