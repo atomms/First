@@ -7,6 +7,16 @@
     android:background="@drawable/gradient"
     tools:context=".LoginActivity">
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logo"
+        android:src="@drawable/girl"
+        android:scaleType="fitStart"
+        >
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
@@ -16,6 +26,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/ic_thunder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:background="@drawable/gradient">
+
+    </View>
 
 
     <com.google.android.material.textfield.TextInputLayout
