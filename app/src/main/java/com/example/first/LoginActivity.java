@@ -21,8 +21,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
+
 //    ImageView mForest = findViewById(R.id.backforest);
-//
+
 ////    New Glide
 //        Glide.with(this)
 //                .load(R.drawable.mforest)
@@ -34,8 +35,8 @@ public class LoginActivity extends AppCompatActivity {
 //            .into(mForest);
 
 
+    public void onClick(View v) {
 
-    public void onClick(View v){
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
     }
