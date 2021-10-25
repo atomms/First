@@ -9,9 +9,8 @@ import android.os.Looper;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class SplashScreen extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
 
         //implements and starts animation
         ImageView thunder = (ImageView) findViewById(R.id.logosplash);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.blink);
         thunder.startAnimation(myanim);
 
     }
@@ -31,8 +30,8 @@ public class SplashScreen extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen
-                        .this, LoginActivity.class);
+                Intent intent = new Intent(Splash
+                        .this, Login.class);
                 startActivity(intent);
             }
         }, 2000);
