@@ -26,8 +26,8 @@ public class Login extends AppCompatActivity {
         ImageView mGirl = findViewById(R.id.girl);
 
         Glide.with(this)
-              .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
-//              .load(R.drawable.girl)
+//              .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
+              .load(R.drawable.girl)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
 
 //                .centerCrop()

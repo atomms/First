@@ -4,18 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".Splash">
 
     <ImageView
+        android:id="@+id/backView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logosplash"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/logosplash"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_thunder"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/ic_thunder">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
     </ImageView>

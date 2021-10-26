@@ -19,7 +19,15 @@
         <activity
             android:name=".Splash"
             android:exported="true"
-            android:theme="@style/NoActionTheme"></activity>
+            android:theme="@style/NoActionTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
         <activity
             android:name=".Main"
             android:exported="true" />
@@ -27,11 +35,7 @@
             android:name=".Login"
             android:exported="true"
             android:theme="@style/NoActionTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
