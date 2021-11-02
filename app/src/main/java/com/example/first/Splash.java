@@ -21,9 +21,10 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         openApp(true);
 
+
         //implements and starts animation
-        ImageView thunder = (ImageView) findViewById(R.id.logosplash);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.blink);
+        ImageView thunder = findViewById(R.id.logosplash);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
         thunder.startAnimation(myanim);
 
         //    Glide for loading girls
@@ -32,7 +33,7 @@ public class Splash extends AppCompatActivity {
         Glide.with(this)
               .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
 //                .load(R.drawable.girl)
-                .transition(DrawableTransitionOptions.withCrossFade(100))
+                .transition(DrawableTransitionOptions.withCrossFade(10))
                 .centerCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
 //                .circleCrop()
@@ -50,7 +51,7 @@ public class Splash extends AppCompatActivity {
                         .this, Login.class);
                 startActivity(intent);
             }
-        }, 2000);
+        }, 3000);
 
 
     }

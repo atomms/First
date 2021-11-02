@@ -16,15 +16,28 @@
 
     <ImageView
         android:id="@+id/logosplash"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="420dp"
         android:src="@drawable/ic_thunder"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
     </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nicestart"
+        android:fontFamily="@font/fredericka_the_great"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@id/logosplash"
+        app:layout_constraintStart_toStartOf="@id/logosplash"
+        app:layout_constraintTop_toBottomOf="@id/logosplash">
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
