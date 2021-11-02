@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/til1"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/ic_lock_foreground">
+        app:startIconDrawable="@drawable/ic_corona_foreground">
 
         <EditText
             android:id="@+id/password"
