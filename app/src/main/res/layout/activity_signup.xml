@@ -6,16 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".Signup">
 
-    <TextView
-        android:id="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="SignUp"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="394dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
