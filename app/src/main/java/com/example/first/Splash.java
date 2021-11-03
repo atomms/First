@@ -9,9 +9,11 @@ import android.os.Looper;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class SplashScreen extends AppCompatActivity {
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+
+public class Splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +21,24 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         openApp(true);
 
+
         //implements and starts animation
-        ImageView thunder = (ImageView) findViewById(R.id.logosplash);
+        ImageView thunder = findViewById(R.id.logosplash);
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
         thunder.startAnimation(myanim);
+
+        //    Glide for loading girls
+        ImageView mSea = findViewById(R.id.backView);
+
+        Glide.with(this)
+              .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
+//                .load(R.drawable.girl)
+                .transition(DrawableTransitionOptions.withCrossFade(10))
+                .centerCrop()
+//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
+//                .circleCrop()
+                .into(mSea);
+
 
     }
 
@@ -31,11 +47,11 @@ public class SplashScreen extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen
-                        .this, LoginActivity.class);
+                Intent intent = new Intent(Splash
+                        .this, Login.class);
                 startActivity(intent);
             }
-        }, 2000);
+        }, 3000);
 
 
     }
