@@ -6,9 +6,11 @@
     <item
         android:id="@+id/item1"
         android:title="Item1"
-        app:showAsAction="ifRoom|withText" />
+        android:icon="@drawable/ic_corona_foreground"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/item2"
         android:title="Item2"
+        android:icon="@drawable/key"
         app:showAsAction="ifRoom|withText" />
 </menu>

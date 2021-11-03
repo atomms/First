@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../usr/share/android-studio-0.8/sdk/platforms/android-31/data/res/drawable/ic_lock_power_off.xml" value="0.2101851851851852" />
         <entry key="../../.gradle/caches/transforms-3/8190198988f5dc1a233e0c21b4a74ad8/transformed/appcompat-1.2.0/res/drawable/abc_btn_default_mtrl_shape.xml" value="0.2140625" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_corona_background.xml" value="0.3828125" />
@@ -20,7 +21,10 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/menu/menu_appbar.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/menu/menu_context.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_corona.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_lock.xml" value="0.2101851851851852" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/thunder.xml" value="0.2140625" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/thunder_round.xml" value="0.2140625" />
       </map>
