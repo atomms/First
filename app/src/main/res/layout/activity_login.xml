@@ -103,6 +103,7 @@
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/button"
         android:onClick="openSignup"
+
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -118,6 +119,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.75" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

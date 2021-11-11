@@ -5,8 +5,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -16,6 +18,9 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
  */
 
 public class Login extends AppCompatActivity {
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +39,13 @@ public class Login extends AppCompatActivity {
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
 //                .circleCrop()
                 .into(mGirl);
+
+
+
+
+
     }
+
 
 
 

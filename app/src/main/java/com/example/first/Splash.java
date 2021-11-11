@@ -13,6 +13,13 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+/**
+ *
+ * @author eramiro
+ * trabajando en mejora de la animación
+ *
+ */
+
 public class Splash extends AppCompatActivity {
 
     @Override

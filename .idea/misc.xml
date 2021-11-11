@@ -9,6 +9,7 @@
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_corona_background.xml" value="0.3828125" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_corona_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/drawable/ic_lock_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/button_custom.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.2140625" />
@@ -30,7 +31,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

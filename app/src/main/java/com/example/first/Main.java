@@ -1,6 +1,7 @@
 package com.example.first;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 
 public class Main extends AppCompatActivity {
 
+    private SwipeRefreshLayout swipeLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +27,31 @@ public class Main extends AppCompatActivity {
         TextView mycontext = (TextView) findViewById(R.id.textTap);
         registerForContextMenu(mycontext);
 
+
+// DENTRO del Oncreate
+// cast al Layout SwipeRefresh con el que rodeamos la vista
+// en el xml y le colocamos un listener
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+
     }
+
+
+    // FUERA del Oncreate
+// construimos el Listener que lanza un Toast y desactiva a
+// continuación del Swipe la animación
+    protected SwipeRefreshLayout.OnRefreshListener
+            mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener()
+    {
+        @Override
+        public void onRefresh() {
+            Toast toast0 = Toast.makeText(Main.this, "going swipeREFRESH", Toast.LENGTH_LONG);
+            toast0.show();
+            swipeLayout.setRefreshing(false);
+        }
+    };
+
 
     //implementing ActionBar/AppBar menu
 
