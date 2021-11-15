@@ -30,7 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="nicestart"
+        android:text="FiRST"
         android:fontFamily="@font/fredericka_the_great"
         android:textColor="@android:color/white"
         android:textSize="50sp"

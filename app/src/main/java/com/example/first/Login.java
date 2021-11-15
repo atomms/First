@@ -19,13 +19,11 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class Login extends AppCompatActivity {
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
 
 //    Glide for loading girls
         ImageView mGirl = findViewById(R.id.girl);

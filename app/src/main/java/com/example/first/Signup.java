@@ -1,5 +1,6 @@
 package com.example.first;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,8 +13,6 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         //added a transparent shape to the traditional action bar
-        getSupportActionBar().setBackgroundDrawable(getDrawable(R.drawable.transparent));
-
-
+//        getSupportActionBar().setBackgroundDrawable(getDrawable(R.drawable.transparent));
     }
 }
