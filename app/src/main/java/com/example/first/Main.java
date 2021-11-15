@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +18,7 @@ import android.widget.Toast;
 public class Main extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
+    private WebView miVisorWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +27,9 @@ public class Main extends AppCompatActivity {
 
         // casting a la vista a la que aplicamos un menu contextual
         // y la registramos
-        TextView mycontext = (TextView) findViewById(R.id.textTap);
+        WebView mycontext = (WebView) findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
+
 
 
 // DENTRO del Oncreate
@@ -33,6 +37,12 @@ public class Main extends AppCompatActivity {
 // en el xml y le colocamos un listener
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+
+        miVisorWeb = (WebView) findViewById(R.id.vistaweb);
+        final WebSettings ajustesVisorWeb = miVisorWeb.getSettings();
+        ajustesVisorWeb.setJavaScriptEnabled(true);
+        miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
     }
@@ -46,8 +56,9 @@ public class Main extends AppCompatActivity {
     {
         @Override
         public void onRefresh() {
-            Toast toast0 = Toast.makeText(Main.this, "going swipeREFRESH", Toast.LENGTH_LONG);
+            Toast toast0 = Toast.makeText(Main.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
             toast0.show();
+            miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
             swipeLayout.setRefreshing(false);
         }
     };
