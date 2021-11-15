@@ -92,12 +92,15 @@ public class Main extends AppCompatActivity {
 
     // implementing context menu
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v,
-                                    ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_context, menu);
+//    @Override
+//    public void onCreateContextMenu(ContextMenu menu, View v,
+//                                    ContextMenu.ContextMenuInfo menuInfo) {
+
+        public void onCreateContextMenu(ContextMenu menu, View v,
+                ContextMenu.ContextMenuInfo menuInfo) {
+
+    getMenuInflater().inflate(R.menu.menu_context, menu);
+
     }
 
     @Override
