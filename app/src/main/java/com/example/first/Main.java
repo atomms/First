@@ -29,15 +29,15 @@ public class Main extends AppCompatActivity {
         registerForContextMenu(mycontext);
 
 
-// DENTRO del Oncreate
-// cast al Layout SwipeRefresh con el que rodeamos la vista
-// en el xml y le colocamos un listener
+        // DENTRO del Oncreate
+        // cast al Layout SwipeRefresh con el que rodeamos la vista
+        // en el xml y le colocamos un listener
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
-
+        //La vista dentro es un webview con permiso para zoom
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
-//        miVisorWeb.getSettings().setJavaScriptEnabled(true);
+        //  miVisorWeb.getSettings().setJavaScriptEnabled(true);
         miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
@@ -46,8 +46,9 @@ public class Main extends AppCompatActivity {
 
 
     // FUERA del Oncreate
-// construimos el Listener que lanza un Toast y desactiva a
-// continuación del Swipe la animación
+    // construimos el Listener que lanza un Toast y desactiva a
+    // continuación del Swipe la animación
+
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
@@ -55,8 +56,6 @@ public class Main extends AppCompatActivity {
             Toast toast0 = Toast.makeText(Main.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
             toast0.show();
             miVisorWeb.reload();
-            miVisorWeb.setBackgroundColor(0x55E91E63);
-//            miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
             swipeLayout.setRefreshing(false);
         }
     };
@@ -77,7 +76,7 @@ public class Main extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        //noinspection SimplifiableIfStatement
+
         if (id == R.id.item1) {
             Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();
@@ -103,8 +102,7 @@ public class Main extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)
-                item.getMenuInfo();
+
         switch (item.getItemId()) {
             case R.id.item1:
                 Toast toast = Toast.makeText(this, "Item copied",
