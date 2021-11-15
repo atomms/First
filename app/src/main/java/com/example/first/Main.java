@@ -1,19 +1,17 @@
 package com.example.first;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.AdapterView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class Main extends AppCompatActivity {
 
@@ -31,7 +29,6 @@ public class Main extends AppCompatActivity {
         registerForContextMenu(mycontext);
 
 
-
 // DENTRO del Oncreate
 // cast al Layout SwipeRefresh con el que rodeamos la vista
 // en el xml y le colocamos un listener
@@ -40,8 +37,8 @@ public class Main extends AppCompatActivity {
 
 
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
-        final WebSettings ajustesVisorWeb = miVisorWeb.getSettings();
-        ajustesVisorWeb.setJavaScriptEnabled(true);
+//        miVisorWeb.getSettings().setJavaScriptEnabled(true);
+        miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
@@ -52,13 +49,14 @@ public class Main extends AppCompatActivity {
 // construimos el Listener que lanza un Toast y desactiva a
 // continuación del Swipe la animación
     protected SwipeRefreshLayout.OnRefreshListener
-            mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener()
-    {
+            mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
             Toast toast0 = Toast.makeText(Main.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
             toast0.show();
-            miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
+            miVisorWeb.reload();
+            miVisorWeb.setBackgroundColor(0x55E91E63);
+//            miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
             swipeLayout.setRefreshing(false);
         }
     };
@@ -72,6 +70,7 @@ public class Main extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_appbar, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -80,17 +79,16 @@ public class Main extends AppCompatActivity {
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
         if (id == R.id.item1) {
-            Toast toast = Toast.makeText(this,"going item1",Toast.LENGTH_LONG );
+            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();
 
         }
         if (id == R.id.item2) {
-            Toast toast = Toast.makeText(this,"going item2",Toast.LENGTH_LONG );
+            Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
             toast.show();
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 
     // implementing context menu
@@ -109,12 +107,12 @@ public class Main extends AppCompatActivity {
                 item.getMenuInfo();
         switch (item.getItemId()) {
             case R.id.item1:
-                Toast toast = Toast.makeText(this, "going CONTEXT ITEM",
+                Toast toast = Toast.makeText(this, "Item copied",
                         Toast.LENGTH_LONG);
                 toast.show();
                 return true;
             case R.id.item2:
-                Toast toast2 = Toast.makeText(this, "going CONTEXT SETTINGS",
+                Toast toast2 = Toast.makeText(this, "Downloading item...",
                         Toast.LENGTH_LONG);
                 toast2.show();
                 return true;

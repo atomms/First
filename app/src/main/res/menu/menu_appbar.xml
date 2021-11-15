@@ -5,12 +5,12 @@
     tools:context="com.rcl.appuem.MainActivity">
     <item
         android:id="@+id/item1"
-        android:title="Item1"
+        android:title="Copy"
         android:icon="@drawable/ic_corona_foreground"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/item2"
-        android:title="Item2"
+        android:title="Settings"
         android:icon="@drawable/key"
         app:showAsAction="ifRoom|withText" />
 </menu>

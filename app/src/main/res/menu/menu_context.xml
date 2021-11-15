@@ -5,10 +5,10 @@
     tools:context="com.rcl.appuem.MainActivity">
     <item
         android:id="@+id/item1"
-        android:title="Item1"
+        android:title="Copy"
         app:showAsAction="ifRoom|withText" />
     <item
         android:id="@+id/item2"
-        android:title="Item2"
+        android:title="Download"
         app:showAsAction="ifRoom|withText" />
 </menu>
