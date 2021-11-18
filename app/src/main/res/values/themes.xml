@@ -19,7 +19,7 @@
         <item name="android:textColorPrimary">@color/white</item>
 
         <item name="actionBarStyle">@style/MyActionBar</item>
-                <item name="android:windowTranslucentStatus">true</item>
+<!--                <item name="android:windowTranslucentStatus">true</item>-->
     </style>
 
     <style name="MyActionBar" parent="Widget.MaterialComponents.Light.ActionBar.Solid">

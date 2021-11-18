@@ -44,7 +44,6 @@
 <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/myswipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -70,8 +69,9 @@
             android:layout_height="match_parent"
             android:id="@+id/vistaweb"
             >
-
         </WebView>
+
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 

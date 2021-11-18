@@ -20,8 +20,9 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Main extends AppCompatActivity {
 
-    private SwipeRefreshLayout swipeLayout;
-    private WebView miVisorWeb;
+
+        private WebView miVisorWeb;
+        private SwipeRefreshLayout swipeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class Main extends AppCompatActivity {
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
-        //La vista dentro es un webview con permiso para zoom
+        //La vista dentro es un WEBVIEW con permiso para zoom
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
         //  miVisorWeb.getSettings().setJavaScriptEnabled(true);
         miVisorWeb.getSettings().setBuiltInZoomControls(true);
@@ -59,11 +60,13 @@ public class Main extends AppCompatActivity {
         @Override
         public void onRefresh() {
 
-
             Toast toast0 = Toast.makeText(Main.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
             toast0.show();
+
             miVisorWeb.reload();
+
             swipeLayout.setRefreshing(false);
+
         }
     };
 
