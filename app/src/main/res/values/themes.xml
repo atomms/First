@@ -14,8 +14,10 @@
     </style>
 
     <style name="ActionTheme" parent="Theme.MaterialComponents.DayNight">
-        <item name="android:textColorPrimary">@color/white</item>
         <item name="android:statusBarColor">@color/fucsia_700</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+
         <item name="actionBarStyle">@style/MyActionBar</item>
 <!--        <item name="alertDialogStyle">@style/MyDialog</item>-->
 <!--                <item name="android:windowTranslucentStatus">true</item>-->
