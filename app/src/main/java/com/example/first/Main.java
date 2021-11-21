@@ -1,5 +1,7 @@
 package com.example.first;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -8,10 +10,12 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.alespero.expandablecardview.ExpandableCardView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Main extends AppCompatActivity {
@@ -46,6 +50,71 @@ public class Main extends AppCompatActivity {
 
 
     }
+
+// *** DIALOGO MODAL ***
+
+    public void showAlertDialogButtonClicked(Main mainActivity) {
+
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+////        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+//        builder.setTitle("Achtung!");
+//        builder.setMessage("Where do you go?");
+//        builder.setIcon(R.drawable.usericon);
+
+        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        // add the buttons
+        builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(Main.this, Signup.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    // ***     DM         ***
+
+//    // EXPANDABLE CARD
+//    ExpandableCardView card = findViewById(R.id.profile);
+// card.setOnExpandedListener(new
+//         ExpandableCardView.OnExpandedListener() {
+//        @Override
+//        public void onExpandChanged(View v, boolean isExpanded) {
+//            Toast.makeText(MainActivity.this, isExpanded ? "Expanded!" :
+//                    "Collapsed!", Toast.LENGTH_SHORT).show();
+//        }
+//    });
 
 
     // FUERA del Oncreate
@@ -83,6 +152,8 @@ public class Main extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.item1) {
+            showAlertDialogButtonClicked(Main.this);
+
             Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();
 
@@ -91,6 +162,11 @@ public class Main extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
             toast.show();
         }
+
+        if (id == R.id.item4) {
+            showAlertDialogButtonClicked(Main.this);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

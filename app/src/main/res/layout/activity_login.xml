@@ -83,7 +83,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:backgroundTint="@color/button_custom"
         android:onClick="openMain"
         android:text="Vaccinate"
@@ -98,6 +98,7 @@
     <Button
         android:id="@+id/buttoninverse"
         style="@style/buttoninverse"
+        android:layout_height="60dp"
         android:text="Signup"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -111,14 +112,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.20" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.80" />
 
 
 
