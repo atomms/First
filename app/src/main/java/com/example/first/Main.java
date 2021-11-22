@@ -20,6 +20,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.alespero.expandablecardview.ExpandableCardView;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Main extends AppCompatActivity {
@@ -56,20 +57,20 @@ public class Main extends AppCompatActivity {
 
     }
 
-// *** DIALOGO MODAL ***
+// DIALOGO MODAL
 
     public void showAlertDialogButtonClicked(Main mainActivity) {
 
         // setup the alert builder
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
 
-////        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
-//        builder.setTitle("Achtung!");
-//        builder.setMessage("Where do you go?");
-//        builder.setIcon(R.drawable.usericon);
+//        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.usericon);
 
-        // un XML a medida para el diálogo
-        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+//        // un XML a medida para el diálogo
+//        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
         builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
@@ -107,19 +108,6 @@ public class Main extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
-    // ***     DM         ***
-
-//    // EXPANDABLE CARD
-//    ExpandableCardView card = findViewById(R.id.profile);
-// card.setOnExpandedListener(new
-//         ExpandableCardView.OnExpandedListener() {
-//        @Override
-//        public void onExpandChanged(View v, boolean isExpanded) {
-//            Toast.makeText(MainActivity.this, isExpanded ? "Expanded!" :
-//                    "Collapsed!", Toast.LENGTH_SHORT).show();
-//        }
-//    });
 
 
     // FUERA del Oncreate
