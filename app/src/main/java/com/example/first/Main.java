@@ -68,6 +68,8 @@ public class Main extends AppCompatActivity {
         builder.setTitle("Achtung!");
         builder.setMessage("Where do you go?");
         builder.setIcon(R.drawable.usericon);
+        builder.setCancelable(false);
+
 
 //        // un XML a medida para el diálogo
 //        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
