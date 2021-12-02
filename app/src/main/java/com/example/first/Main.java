@@ -19,7 +19,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.alespero.expandablecardview.ExpandableCardView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -69,7 +68,6 @@ public class Main extends AppCompatActivity {
         builder.setMessage("Where do you go?");
         builder.setIcon(R.drawable.usericon);
         builder.setCancelable(false);
-
 
 //        // un XML a medida para el diálogo
 //        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
