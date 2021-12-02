@@ -5,6 +5,12 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ *
+ * This is the Signup
+ * @author ernesto
+ * @see Login
+ */
 public class Signup extends AppCompatActivity {
 
     @Override
