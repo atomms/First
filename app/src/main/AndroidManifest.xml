@@ -18,6 +18,11 @@
             android:parentActivityName=".Login"
             />
         <activity
+            android:name=".MainBAP"
+            android:exported="true"
+            android:theme="@style/Theme.First"
+            />
+        <activity
             android:name=".Splash"
             android:exported="true"
             android:screenOrientation="portrait"

@@ -156,6 +156,10 @@ public class Main extends AppCompatActivity {
             toast.show();
         }
 
+        if (id == R.id.item3) {
+            Intent intent = new Intent(Main.this, MainBAP.class);
+            startActivity(intent);
+        }
         if (id == R.id.item4) {
             showAlertDialogButtonClicked(Main.this);
         }

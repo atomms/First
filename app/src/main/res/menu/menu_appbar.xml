@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/item3"
-        android:title="About us"
+        android:title="Bottom app bar"
         app:showAsAction="never" />
 
     <item
