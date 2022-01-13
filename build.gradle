@@ -17,3 +17,22 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+//// Copies the javadoc files to project 'lib/javadoc' folder
+//task copyJavadocs(type: Copy) {
+//    from {
+//        dependencies.createArtifactResolutionQuery()
+//                .forComponents(
+//                        configurations.compile.incoming.resolutionResult
+//                                .allDependencies.collect { it.selected.id }
+//                )
+//                .withArtifacts(JvmLibrary, JavadocArtifact)
+//                .execute()
+//                .resolvedComponents
+//                .collectMany {
+//                    it.artifactResults
+//                            .collect { it.file.path }
+//                }
+//    }
+//    into "$projectDir/$sunriseProjectName/lib/javadoc"
+//}

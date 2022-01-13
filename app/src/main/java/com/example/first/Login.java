@@ -58,6 +58,10 @@ public class Login extends AppCompatActivity {
     public void openSignup(View v) {
         Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
+
+//      THIS ENDS APP
+//        this.finishAffinity();
+
     }
 
 }
