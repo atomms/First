@@ -38,8 +38,9 @@
             app:fabAlignmentMode="center"
             app:menu="@menu/bottom_app_bar_menu"
             app:navigationIcon="@drawable/ic_burger"
-            android:backgroundTint="@color/fucsia_200"/>
-        <!--        style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
+            android:backgroundTint="@color/fucsia_200"
+            />
+        <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -48,7 +49,6 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_add"
             app:fabSize="normal"
-
             app:layout_anchor="@+id/bottom_app_bar" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
