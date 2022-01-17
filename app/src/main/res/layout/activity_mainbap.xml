@@ -18,8 +18,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipToPadding="false"
->
+    android:clipToPadding="false">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
@@ -27,8 +26,7 @@
         android:layout_height="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottom_app_bar"
@@ -38,18 +36,21 @@
             app:fabAlignmentMode="center"
             app:menu="@menu/bottom_app_bar_menu"
             app:navigationIcon="@drawable/ic_burger"
-            android:backgroundTint="@color/fucsia_200"
+
             />
         <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
+            app:tint="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_add"
             app:fabSize="normal"
-            app:layout_anchor="@+id/bottom_app_bar" />
+            android:backgroundTint="@color/fucsia_700"
+            app:layout_anchor="@+id/bottom_app_bar"
+            />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
