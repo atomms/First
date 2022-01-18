@@ -22,6 +22,10 @@
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/menu_appbar.xml" value="0.5" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/menu_context.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_add.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_burger.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_heart.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_planet.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/button_custom.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/ic_corona_foreground.xml" value="0.2140625" />
@@ -31,6 +35,7 @@
         <entry key="app/src/main/res/drawable/transparent.xml" value="0.21076923076923076" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_mainbap.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/alertdialog_view.xml" value="0.19791666666666666" />
