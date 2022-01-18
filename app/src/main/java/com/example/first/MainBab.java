@@ -13,14 +13,14 @@ import com.google.android.material.bottomappbar.BottomAppBar;
 /**
  * main class here
  */
-public class MainBAP extends AppCompatActivity {
+public class MainBab extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainbap);
+        setContentView(R.layout.activity_mainbab);
 
 //        this.getSupportActionBar().setDisplayShowCustomEnabled(true);
 //
@@ -40,7 +40,7 @@ public class MainBAP extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainBAP.this, "FAB Clicked.", Toast.LENGTH_SHORT).show();
+               Toast.makeText(MainBab.this, "FAB Clicked.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -48,7 +48,7 @@ public class MainBAP extends AppCompatActivity {
         bottomAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainBAP.this, "Menu clicked!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainBab.this, "Menu clicked!", Toast.LENGTH_SHORT).show();
 //                sheetBehavior = BottomSheetBehavior.from(sheet);
             }
 
@@ -61,10 +61,10 @@ public class MainBAP extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.heart:
-                        Toast.makeText(MainBAP.this, "added to favourites", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainBab.this, "added to favourites", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.search:
-                        Toast.makeText(MainBAP.this, "beginning search", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainBab.this, "beginning search", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;

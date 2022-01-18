@@ -4,22 +4,16 @@
 
     <item
         android:id="@+id/heart"
-        android:title="Settings"
+        android:title="Favourite"
         android:icon="@drawable/ic_heart"
-        android:contentDescription="none"
         app:showAsAction="ifRoom"
         />
 
-
-
-    <!--    android:icon="@drawable/ic_search_24dp"-->/
     <item
         android:id="@+id/search"
-        android:title="About"
+        android:title="Language"
         android:icon="@drawable/ic_planet"
-        android:contentDescription="none"
         app:showAsAction="ifRoom"
-        >
-    </item>
+        />
 
 </menu>
