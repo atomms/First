@@ -160,7 +160,13 @@ public class Main extends AppCompatActivity {
             Intent intent = new Intent(Main.this, MainBab.class);
             startActivity(intent);
         }
+
         if (id == R.id.item4) {
+            Intent intent = new Intent(this, MainBn.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.item5) {
             showAlertDialogButtonClicked(Main.this);
         }
 
