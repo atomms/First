@@ -3,7 +3,7 @@
     <string name="login">Login</string>
     <string name="signup">Signup</string>
     <string name="vaccinate">Vaccinate</string>
-    <string name="title_activity_main_bn">MainBn</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main_bn" translatable="false">MainBn</string>
+    <string name="tab_text_1" translatable="false">Tab 1</string>
+    <string name="tab_text_2" translatable="false">Tab 2</string>
 </resources>
