@@ -29,6 +29,7 @@ public class MainBn extends AppCompatActivity {
         binding = ActivityMainBnBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //el adaptador coloca las Pages -los fragmentos con las diferentes vistas- dentro de la vista padre Viewpager del xml
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = binding.viewPager;
         viewPager.setAdapter(sectionsPagerAdapter);
