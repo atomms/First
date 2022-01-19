@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.first.Page1;
-import com.example.first.Page2;
-import com.example.first.Page3;
-import com.example.first.Page4;
+import com.example.first.fragments.Page1;
+import com.example.first.fragments.Page2;
+import com.example.first.fragments.Page3;
+import com.example.first.fragments.Page4;
 import com.example.first.R;
 
 /**
@@ -49,7 +49,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 3:
                 return new Page4();
             default:
-                return new PlaceholderFragment();
+                return null;
+
+//                return int 0;
+//                return new PlaceholderFragment();
 
         }
 

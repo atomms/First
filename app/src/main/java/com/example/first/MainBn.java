@@ -1,24 +1,21 @@
 package com.example.first;
 
 import android.os.Bundle;
-
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.tabs.TabLayout;
-
-import androidx.annotation.IdRes;
-import androidx.annotation.NonNull;
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.first.ui.main.SectionsPagerAdapter;
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import com.example.first.databinding.ActivityMainBnBinding;
+import com.example.first.ui.main.SectionsPagerAdapter;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainBn extends AppCompatActivity {
 
@@ -38,7 +35,7 @@ public class MainBn extends AppCompatActivity {
 //        TabLayout tabs = binding.tabs;
 //        tabs.setupWithViewPager(viewPager);
 //        FloatingActionButton fab = binding.fab;
-
+//
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
