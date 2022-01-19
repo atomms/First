@@ -20,17 +20,17 @@
     </item>
 
     <item
-        android:id="@+id/profile"
-        android:title="Profile"
+        android:id="@+id/browse"
+        android:title="Browse"
         android:icon="@drawable/ic_planet"
         android:contentDescription="none"
         app:showAsAction="ifRoom"
         />
 
     <item
-        android:id="@+id/marker"
-        android:title="Marker"
-        android:icon="@drawable/ic_burger"
+        android:id="@+id/personal"
+        android:title="Personal"
+        android:icon="@drawable/ic_face"
         android:contentDescription="none"
         app:showAsAction="always"
         >
