@@ -15,12 +15,19 @@
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout-land/activity_signup.xml" value="0.396875" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_login.xml" value="0.4462962962962963" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_mainbab.xml" value="0.5" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_main_bn.xml" value="0.25" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_mainbab.xml" value="0.33" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_mainbap.xml" value="0.1" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/alertdialog_view.xml" value="0.33" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/fragment_main_bn.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/fragment_page1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/fragment_page2.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/fragment_page3.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/layout/fragment_page4.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.67" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/menu_appbar.xml" value="0.5" />
         <entry key="..\:/Users/eramiro/AndroidStudioProjects/First/app/src/main/res/menu/menu_context.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/button_custom.xml" value="0.2140625" />

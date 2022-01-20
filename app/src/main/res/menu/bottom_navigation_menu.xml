@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/heart"
+        android:title="Favourite"
+        android:icon="@drawable/ic_heart"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/add"
+        android:title="Add"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/browse"
+        android:title="Browse"
+        android:icon="@drawable/ic_planet"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always"
+        />
+
+</menu>
