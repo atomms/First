@@ -34,11 +34,11 @@ public class MainBn extends AppCompatActivity {
         // el adaptador coloca las Pages -los fragmentos con las diferentes vistas- dentro de la vista padre Viewpager del xml
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = binding.viewPager;
+
         viewPager.setAdapter(sectionsPagerAdapter);
 
-
-        TabLayout tabs = binding.tabs;
-        tabs.setupWithViewPager(viewPager);
+//        TabLayout tabs = binding.tabs;
+//        tabs.setupWithViewPager(viewPager);
 
         // cast al xml
         BottomNavigationView mybottomNavView = findViewById(R.id.bottom_navigation);
