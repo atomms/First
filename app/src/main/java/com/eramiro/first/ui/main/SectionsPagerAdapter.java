@@ -1,18 +1,15 @@
-package com.example.first.ui.main;
+package com.eramiro.first.ui.main;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.first.fragments.Page1;
-import com.example.first.fragments.Page2;
-import com.example.first.fragments.Page3;
-import com.example.first.fragments.Page4;
-import com.example.first.R;
+import com.eramiro.first.fragments.Page1;
+import com.eramiro.first.fragments.Page2;
+import com.eramiro.first.fragments.Page3;
+import com.eramiro.first.fragments.Page4;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

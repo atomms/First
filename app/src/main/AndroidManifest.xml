@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.first">
+    package="com.eramiro.first">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,21 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First">
         <activity
-            android:name=".MainBn"
+            android:name="com.eramiro.first.MainBn"
             android:exported="true"
             android:label="@string/title_activity_main_bn"
             android:theme="@style/Theme.First.NoActionBar" />
         <activity
-            android:name=".Signup"
+            android:name="com.eramiro.first.Signup"
             android:exported="true"
-            android:parentActivityName=".Login"
+            android:parentActivityName="com.eramiro.first.Login"
             android:theme="@style/ActionTheme" />
         <activity
-            android:name=".MainBab"
+            android:name="com.eramiro.first.MainBab"
             android:exported="true"
             android:theme="@style/Theme.First" />
         <activity
-            android:name=".Splash"
+            android:name="com.eramiro.first.Splash"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -36,11 +36,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main"
+            android:name="com.eramiro.first.Main"
             android:exported="true"
             android:theme="@style/ActionTheme" />
         <activity
-            android:name=".Login"
+            android:name="com.eramiro.first.Login"
             android:exported="true"></activity>
 
         <meta-data
