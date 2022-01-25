@@ -1,4 +1,4 @@
-package com.example.first;
+package com.eramiro.first;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,8 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.first.databinding.ActivityMainBnBinding;
-import com.example.first.ui.main.SectionsPagerAdapter;
+import com.eramiro.first.ui.main.SectionsPagerAdapter;
+import com.eramiro.first.R;
+import com.eramiro.first.databinding.ActivityMainBnBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

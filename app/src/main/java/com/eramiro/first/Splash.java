@@ -1,4 +1,4 @@
-package com.example.first;
+package com.eramiro.first;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.eramiro.first.R;
 
 /**
  *

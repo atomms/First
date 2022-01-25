@@ -1,4 +1,4 @@
-package com.example.first.fragments;
+package com.eramiro.first.fragments;
 
 import android.os.Bundle;
 
@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.first.R;
+import com.eramiro.first.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Page3#newInstance} factory method to
+ * Use the {@link Page2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Page3 extends Fragment {
+public class Page2 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class Page3 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Page3() {
+    public Page2() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class Page3 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Page3.
+     * @return A new instance of fragment Page2.
      */
     // TODO: Rename and change types and number of parameters
-    public static Page3 newInstance(String param1, String param2) {
-        Page3 fragment = new Page3();
+    public static Page2 newInstance(String param1, String param2) {
+        Page2 fragment = new Page2();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class Page3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_page3, container, false);
+        return inflater.inflate(R.layout.fragment_page2, container, false);
     }
 }

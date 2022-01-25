@@ -1,9 +1,11 @@
-package com.example.first;
+package com.eramiro.first;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.eramiro.first.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

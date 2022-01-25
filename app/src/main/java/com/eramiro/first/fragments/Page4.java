@@ -1,4 +1,4 @@
-package com.example.first.fragments;
+package com.eramiro.first.fragments;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.first.R;
+import com.eramiro.first.R;
 
 /**
  * A simple {@link Fragment} subclass.

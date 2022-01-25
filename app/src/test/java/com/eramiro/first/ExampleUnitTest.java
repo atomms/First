@@ -1,4 +1,4 @@
-package com.example.first;
+package com.eramiro.first;
 
 import org.junit.Test;
 
