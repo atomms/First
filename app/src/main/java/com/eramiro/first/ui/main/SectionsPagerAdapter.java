@@ -37,16 +37,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // que corresponde a la posición que se le pasa a la clase Fragment como argumento
 
         switch (position) {
-            case 0:
-                return new Page1();
-            case 1:
-                return new Page2();
-            case 2:
-                return new Page3();
-            case 3:
-                return new Page4();
-            default:
-                return null;
+                case 0:
+                    return new Page1();
+                case 1:
+                    return new Page2();
+                case 2:
+                    return new Page3();
+                case 3:
+                    return new Page4();
+                default:
+                    return null;
 
 //                return int 0;
 //                return new PlaceholderFragment();

@@ -11,6 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
 
         <item name="android:statusBarColor">@color/fucsia_700</item>
+
+        <item name="bottomNavigationStyle">@style/BottomNavigation</item>
+
     </style>
 
     <style name="ActionTheme" parent="Theme.MaterialComponents.DayNight">
@@ -35,6 +38,17 @@
     <style name="Theme.First.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.First.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="BottomNavigation">
+        <item name="itemIconTint">@color/bottomselector</item>
+        <item name="android:background">@color/white</item>
+        <item name="itemTextColor">@color/bottomselector</item>
+    </style>
+
+
+
 
     <!--    <style name="MyDialog" parent="android:Theme.Dialog">-->
     <!--        <item name="android:textColor">#54D66A</item>-->

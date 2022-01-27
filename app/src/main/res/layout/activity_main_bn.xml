@@ -40,7 +40,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:menu="@menu/bottom_navigation_menu" />
+        app:menu="@menu/bottom_navigation_menu"
+        />
+
+    <!--        android:foregroundTint="@color/bottomselector"-->
+<!--    style="@style/BottomNavigation"-->
+
+    <!--        android:foregroundTint="@color/bottomselector"-->
 
     <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
     <!--        android:id="@+id/fab"-->

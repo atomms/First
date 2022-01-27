@@ -10,7 +10,6 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 import com.eramiro.first.ui.main.SectionsPagerAdapter;
 import com.eramiro.first.R;
 import com.eramiro.first.databinding.ActivityMainBnBinding;
