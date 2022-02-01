@@ -40,14 +40,11 @@
     <style name="Theme.First.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-
     <style name="BottomNavigation">
         <item name="itemIconTint">@color/bottomselector</item>
         <item name="android:background">@color/white</item>
         <item name="itemTextColor">@color/bottomselector</item>
     </style>
-
-
 
 
     <!--    <style name="MyDialog" parent="android:Theme.Dialog">-->
