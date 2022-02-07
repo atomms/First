@@ -37,7 +37,7 @@ public class Signup extends AppCompatActivity {
 //        view.setText(str);
 //
         Date today = Calendar.getInstance().getTime();//getting date
-        SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy"); //formating according to my needs
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy"); //formating according to my needs
         String date = formatter.format(today);
         view.setText(date);
 
