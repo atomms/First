@@ -9,33 +9,10 @@ buildscript {
         classpath "com.android.tools.build:gradle:7.0.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
+                // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
-
-//task androidJavadocs(type: Javadoc, dependsOn: 'assembleRelease') {
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-//    android.libraryVariants.all { variant ->
-//        if (variant.name == 'release') {
-//            owner.classpath += variant.javaCompile.classpath
-//        }
-//    }
-//    source = android.sourceSets.main.java.srcDirs
-//    exclude '**/R.html', '**/R.*.html', '**/index.html'
-//}
-
-//task javadoc(type: Javadoc) {
-//    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-//}
-//
-//afterEvaluate {
-//    javadoc.classpath += files(android.libraryVariants.collect { variant ->
-//        variant.javaCompileProvider.get().classpath.files
-//    })
-//}
-
 
 task clean(type: Delete) {
     delete rootProject.buildDir
