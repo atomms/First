@@ -89,11 +89,11 @@
         app:layout_constraintTop_toBottomOf="@id/til2"
 
 
-        style="@style/ButtonNormal" />
+        style="@style/buttonflat" />
 
     <Button
         android:id="@+id/buttoninverse"
-        style="@style/buttoninverse"
+        style="@style/buttonoutlined"
         android:layout_height="60dp"
         android:text="Signup"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
