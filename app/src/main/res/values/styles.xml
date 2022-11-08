@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="buttoninverse" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="buttonoutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/white</item>
@@ -9,7 +9,7 @@
         <item name="strokeColor">@android:color/white</item>
     </style>
 
-    <style name="ButtonNormal">
+    <style name="buttonflat">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">60dp</item>
         <item name="android:backgroundTint">@color/button_custom</item>

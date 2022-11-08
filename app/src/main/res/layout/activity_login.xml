@@ -14,7 +14,8 @@
         android:layout_height="match_parent"
         android:scaleType="fitStart"
         />
-    <!--    android:src="@drawable/girl"-->
+<!--    android:src="@drawable/girl"-->
+
 
     <ImageView
         android:id="@+id/logo"
@@ -83,17 +84,17 @@
     <Button
         android:id="@+id/button"
         android:onClick="openMain"
-        android:text="@string/vaccinate"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/til2"
 
 
-        style="@style/ButtonNormal" />
+        style="@style/buttonflat" />
 
     <Button
         android:id="@+id/buttoninverse"
-        style="@style/buttoninverse"
+        style="@style/buttonoutlined"
         android:layout_height="60dp"
         android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
