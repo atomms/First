@@ -29,12 +29,12 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        openApp(true);
+        openApp();
 
 
         //implements and starts animation
         ImageView thunder = findViewById(R.id.logosplash);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.blink);
         thunder.startAnimation(myanim);
 
         //    Glide for loading girls
@@ -52,7 +52,7 @@ public class Splash extends AppCompatActivity {
 
     }
 
-    private void openApp(boolean locationPermission) {
+    private void openApp() {
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable()
