@@ -49,12 +49,13 @@ public class Splash extends AppCompatActivity {
 //                .circleCrop()
                 .into(mSea);
 
-
     }
 
     private void openApp(boolean locationPermission) {
 
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable()
+        {
             @Override
             public void run() {
                 Intent intent = new Intent(Splash
