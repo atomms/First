@@ -2,7 +2,7 @@
 
 This **repository** will be used during the different activities that I will be guiding you through.
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+![login activity](img/login.png)
 
 I'll meet you over there, can't wait to get started!
 
