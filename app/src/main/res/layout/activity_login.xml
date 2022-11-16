@@ -8,14 +8,17 @@
     tools:context="com.eramiro.first.Login">
 
 
+    <!--    android:src="@drawable/girl"-->
+
+
     <ImageView
         android:id="@+id/girl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
-        />
-<!--    android:src="@drawable/girl"-->
 
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/logo"

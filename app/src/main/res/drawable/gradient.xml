@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"    >
     <gradient
         android:startColor="@color/purple_500"
@@ -7,4 +7,20 @@
         android:angle="90"
         >
     </gradient>
+<!--</shape>-->
+
+
+<!--<shape-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:shape="rectangle">-->
+
+<!--    <gradient-->
+<!--        android:type="sweep"-->
+<!--        android:centerX="50%"-->
+<!--        android:centerY="50%"-->
+<!--        android:startColor="#FF0000"-->
+<!--        android:centerColor="#0068FF"-->
+<!--        android:endColor="#F70000"-->
+<!--        />-->
+
 </shape>
