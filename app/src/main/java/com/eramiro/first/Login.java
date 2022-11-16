@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +26,16 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+        //implements and starts animation
+        // objeto thunder sobre el cual aplicaremos la animación
+        ImageView logo = findViewById(R.id.logo);
+
+        //creamos un objeto animación que incorpora la animación descrita en el xml y con el método
+        // startAnimation lo aplicamos al imageview del logo
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        logo.startAnimation(myanim);
 
 
 //    Glide for loading girls
