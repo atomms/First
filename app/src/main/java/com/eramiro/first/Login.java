@@ -34,7 +34,7 @@ public class Login extends AppCompatActivity {
 
         //creamos un objeto animación que incorpora la animación descrita en el xml y con el método
         // startAnimation lo aplicamos al imageview del logo
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.shake);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
         logo.startAnimation(myanim);
 
 
