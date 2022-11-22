@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -18,6 +19,8 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.eramiro.first.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
+
+import org.w3c.dom.Text;
 
 /**
  * @author ernesto
@@ -38,6 +41,7 @@ public class Main extends AppCompatActivity {
 
         // casting a la vista a la que aplicamos un menu contextual
         // y la registramos
+
         WebView mycontext = (WebView) findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
 
@@ -50,8 +54,8 @@ public class Main extends AppCompatActivity {
 
         //La vista dentro es un webview con permiso para zoom
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
-        //  miVisorWeb.getSettings().setJavaScriptEnabled(true);
-        miVisorWeb.getSettings().setBuiltInZoomControls(true);
+//        miVisorWeb.getSettings().setJavaScriptEnabled(true);
+//        miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
@@ -221,7 +225,8 @@ public class Main extends AppCompatActivity {
                 return true;
 
             default:
-                return super.onContextItemSelected(item);
+//                return super.onContextItemSelected(item);
+                return false;
         }
 
     }
