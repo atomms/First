@@ -10,7 +10,7 @@
         android:id="@+id/item2"
         android:title="Settings"
         android:icon="@drawable/key"
-        app:showAsAction="ifRoom|withText" />
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/item3"
