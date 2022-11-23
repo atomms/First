@@ -1,5 +1,7 @@
 package com.eramiro.first;
 
+import static android.app.PendingIntent.getActivity;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,7 +29,6 @@ import org.w3c.dom.Text;
  * @see Login
  */
 public class Main extends AppCompatActivity {
-
 
     private WebView miVisorWeb;
     private SwipeRefreshLayout swipeLayout;
@@ -58,6 +59,12 @@ public class Main extends AppCompatActivity {
 //        miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
+
+        // DENTRO del Oncreate
+        // cast al Layout SwipeRefresh con el que rodeamos la vista
+        // en el xml y le colocamos un listener
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
     }
 
@@ -104,6 +111,7 @@ public class Main extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
 
                 // do something like...
+                System.exit(0);
 
                 dialog.dismiss();
             }
