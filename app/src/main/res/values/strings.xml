@@ -3,6 +3,7 @@
     <string name="login">Login</string>
     <string name="signup">Signup</string>
     <string name="vaccinate">Vaccinate</string>
+    <string name="emoji" translatable="false">Hi &#128072;</string>
     <string name="title_activity_main_bn" translatable="false">MainBn</string>
     <string name="tab_text_1" translatable="false">Tab 1</string>
     <string name="tab_text_2" translatable="false">Tab 2</string>

@@ -28,6 +28,7 @@ import org.w3c.dom.Text;
  * @author ernesto
  * @see Login
  */
+
 public class Main extends AppCompatActivity {
 
     private WebView miVisorWeb;
@@ -81,8 +82,8 @@ public class Main extends AppCompatActivity {
         builder.setIcon(R.drawable.usericon);
         builder.setCancelable(false);
 
-//        // un XML a medida para el diálogo
-//        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
         builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
