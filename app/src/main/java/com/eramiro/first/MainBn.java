@@ -17,6 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+
 public class MainBn extends AppCompatActivity {
 
     private ActivityMainBnBinding binding;
@@ -124,7 +125,13 @@ public class MainBn extends AppCompatActivity {
 
     }
 
-    //removing badges
+    /**
+     * Remove badge.
+     *
+     * @param bottomNavigationView the bottom navigation view
+     * @param itemId               the item id
+     */
+//removing badges
     public static void removeBadge(BottomNavigationView bottomNavigationView, @IdRes int itemId) {
         BottomNavigationItemView itemView = bottomNavigationView.findViewById(itemId);
         if (itemView.getChildCount() == 3) {

@@ -25,10 +25,11 @@ import com.google.android.material.snackbar.Snackbar;
 import org.w3c.dom.Text;
 
 /**
+ * The type Main.
+ *
  * @author ernesto
  * @see Login
  */
-
 public class Main extends AppCompatActivity {
 
     private WebView miVisorWeb;
@@ -71,6 +72,11 @@ public class Main extends AppCompatActivity {
 
 // DIALOGO MODAL
 
+    /**
+     * Show alert dialog button clicked.
+     *
+     * @param mainActivity the main activity
+     */
     public void showAlertDialogButtonClicked(Main mainActivity) {
 
         // setup the alert builder
@@ -128,6 +134,9 @@ public class Main extends AppCompatActivity {
     // construimos el Listener que lanza un Toast y desactiva a
     // continuación del Swipe la animación
 
+    /**
+     * The M on refresh listener.
+     */
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
