@@ -49,6 +49,7 @@
             app:fabSize="normal"
             android:backgroundTint="@color/fucsia_700"
             app:layout_anchor="@+id/bottom_app_bar"
+            />
 
             />
 
