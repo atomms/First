@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.tabbing.fragments.Page1;
-import com.example.tabbing.fragments.Page2;
-import com.example.tabbing.fragments.Page3;
+import com.eramiro.first.fragments.Page1;
+import com.eramiro.first.fragments.Page2;
+import com.eramiro.first.fragments.Page3;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

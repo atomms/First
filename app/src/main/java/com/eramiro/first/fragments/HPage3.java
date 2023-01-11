@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.tabbing.R;
+import com.eramiro.first.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
