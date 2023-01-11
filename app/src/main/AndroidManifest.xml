@@ -38,6 +38,10 @@
             android:name=".Main"
             android:exported="true"
             android:theme="@style/ActionTheme" />
+        <activity
+            android:name=".Help"
+            android:exported="true"
+            android:theme="@style/Theme.First.NoActionBar" />
 
         <activity
             android:name=".MainBn"

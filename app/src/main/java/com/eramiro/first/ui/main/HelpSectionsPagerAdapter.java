@@ -6,9 +6,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.eramiro.first.fragments.Page1;
-import com.eramiro.first.fragments.Page2;
-import com.eramiro.first.fragments.Page3;
+import com.eramiro.first.fragments.HPage1;
+import com.eramiro.first.fragments.HPage2;
+import com.eramiro.first.fragments.HPage3;
+
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -32,11 +33,11 @@ public class HelpSectionsPagerAdapter extends FragmentPagerAdapter {
 //        return PlaceholderFragment.newInstance(position + 1);
         switch (position) {
             case 0:
-                return new Page1();
+                return new HPage1();
             case 1:
-                return new Page2();
+                return new HPage2();
             case 2:
-                return new Page3();
+                return new HPage3();
             default:
                 return null;
 

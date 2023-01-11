@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.eramiro.first.databinding.ActivityMainBinding;
-import com.eramiro.first.ui.main.SectionsPagerAdapter;
-//import com.example.tabbing.databinding.ActivityMainBinding;
-//import com.example.tabbing.ui.main.SectionsPagerAdapter;
+import com.eramiro.first.ui.main.HelpSectionsPagerAdapter;
+
+
 
 public class Help extends AppCompatActivity {
 
@@ -38,10 +38,10 @@ public class Help extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+        HelpSectionsPagerAdapter helpsectionsPagerAdapter = new HelpSectionsPagerAdapter(this, getSupportFragmentManager());
 //        ViewPager viewPager = binding.viewPager;
         ViewPager viewPager = findViewById(R.id.view_hpager);
-        viewPager.setAdapter(sectionsPagerAdapter);
+        viewPager.setAdapter(helpsectionsPagerAdapter);
 //        TabLayout tabs = binding.tabs;
 //        tabs.setupWithViewPager(viewPager);
 //        FloatingActionButton fab = binding.fab;
@@ -58,7 +58,7 @@ public class Help extends AppCompatActivity {
 
     public void moveToSecondary(){
         // use an intent to travel from one activity to another.
-        Intent intent = new Intent(this,Main.class);
+        Intent intent = new Intent(this,Login.class);
         startActivity(intent);
     }
 
