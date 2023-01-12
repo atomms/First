@@ -12,10 +12,10 @@ import com.eramiro.first.databinding.ActivityMainBinding;
 import com.eramiro.first.ui.main.HelpSectionsPagerAdapter;
 
 
-
 public class Help extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private HelpSectionsPagerAdapter helpSectionsPagerAdapter;
     String prevStarted = "yes";
 
     @Override
@@ -34,14 +34,13 @@ public class Help extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_help);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        HelpSectionsPagerAdapter helpsectionsPagerAdapter = new HelpSectionsPagerAdapter(this, getSupportFragmentManager());
-//        ViewPager viewPager = binding.viewPager;
-        ViewPager viewPager = findViewById(R.id.view_hpager);
-        viewPager.setAdapter(helpsectionsPagerAdapter);
+//        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+        helpSectionsPagerAdapter = new HelpSectionsPagerAdapter(this, getSupportFragmentManager());
+        ViewPager viewPager2 = findViewById(R.id.view_hpager);
+        viewPager2.setAdapter(helpSectionsPagerAdapter);
 //        TabLayout tabs = binding.tabs;
 //        tabs.setupWithViewPager(viewPager);
 //        FloatingActionButton fab = binding.fab;
