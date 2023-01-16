@@ -17,45 +17,41 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Login"
-            android:exported="true"
-        />
+            android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <activity
             android:name=".Signup"
             android:exported="true"
             android:parentActivityName=".Login"
             android:theme="@style/ActionTheme" />
-
         <activity
             android:name=".Main"
             android:exported="true"
             android:theme="@style/ActionTheme" />
-
         <activity
             android:name=".MainBn"
             android:exported="true"
             android:label="@string/title_activity_main_bn"
             android:theme="@style/Theme.First.NoActionBar" />
-
         <activity
             android:name=".MainBab"
             android:exported="true"
             android:theme="@style/Theme.First" />
-
         <activity
             android:name=".ScrollingActivity"
             android:exported="false"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.First.NoActionBar" />
-
     </application>
 
 </manifest>
