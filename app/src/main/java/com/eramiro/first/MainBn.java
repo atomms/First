@@ -21,7 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainBn extends AppCompatActivity {
 
-//    private ActivityMainBnBinding binding;
+    private ActivityMainBnBinding binding;
     private MenuItem prevMenuItem;
     private SectionsPagerAdapter sectionsPagerAdapter;
 
@@ -29,8 +29,8 @@ public class MainBn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_bn);
-//        binding = ActivityMainBnBinding.inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
+        binding = ActivityMainBnBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         //el adaptador coloca las Pages -los fragmentos con las diferentes vistas- dentro de la vista padre Viewpager del xml
         sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
@@ -74,25 +74,28 @@ public class MainBn extends AppCompatActivity {
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(0);
                         break;
+
                     case R.id.add:
                         item.setChecked(true);
                         Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(1);
                         break;
+
                     case R.id.browse:
                         item.setChecked(true);
-                        Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainBn.this, "Browse clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(2);
-
                         break;
+
                     case R.id.personal:
                         item.setChecked(true);
-                        Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainBn.this, "Personal clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(3);
                         break;
+
                 }
                 return false;
             }
