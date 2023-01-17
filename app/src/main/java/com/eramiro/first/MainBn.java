@@ -109,10 +109,9 @@ public class MainBn extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                if (prevMenuItem != null)
+                if (prevMenuItem != null) {
                     prevMenuItem.setChecked(false);
-
-                else
+                } else
                     mybottomNavView.getMenu().getItem(0).setChecked(false);
                     mybottomNavView.getMenu().getItem(position).setChecked(true);
                     removeBadge(mybottomNavView,mybottomNavView.getMenu().getItem(position).getItemId());
