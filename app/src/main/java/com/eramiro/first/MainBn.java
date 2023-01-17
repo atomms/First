@@ -74,25 +74,28 @@ public class MainBn extends AppCompatActivity {
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(0);
                         break;
+
                     case R.id.add:
                         item.setChecked(true);
                         Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(1);
                         break;
+
                     case R.id.browse:
                         item.setChecked(true);
-                        Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainBn.this, "Browse clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(2);
-
                         break;
+
                     case R.id.personal:
                         item.setChecked(true);
-                        Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainBn.this, "Personal clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager1.setCurrentItem(3);
                         break;
+
                 }
                 return false;
             }

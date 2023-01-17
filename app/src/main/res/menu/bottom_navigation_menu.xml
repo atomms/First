@@ -7,7 +7,7 @@
         android:title="Likes"
         android:icon="@drawable/ic_heart"
         android:contentDescription="none"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 
     <item
@@ -24,7 +24,7 @@
         android:title="Browse"
         android:icon="@drawable/ic_planet"
         android:contentDescription="none"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 
     <item

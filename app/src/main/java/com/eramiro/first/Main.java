@@ -28,7 +28,6 @@ import org.w3c.dom.Text;
  * The type Main.
  *
  * @author ernesto
- * @see Login
  */
 public class Main extends AppCompatActivity {
 
