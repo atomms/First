@@ -16,7 +16,8 @@
             android:text="@string/lorem"
             android:textSize="30sp"
             android:textColor="@color/white"
-            android:padding="10dp">
+            android:padding="10dp"
+            >
 
         </TextView>
 
