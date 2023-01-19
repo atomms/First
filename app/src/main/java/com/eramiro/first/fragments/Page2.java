@@ -7,15 +7,18 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
+import com.eramiro.first.MyBottomSheet;
 import com.eramiro.first.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Page2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Page2 extends Fragment {
+public class Page2<MyBottomSheetFragment> extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +29,8 @@ public class Page2 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Page2() {
+
+        public Page2() {
         // Required empty public constructor
     }
 
@@ -63,4 +67,6 @@ public class Page2 extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_page2, container, false);
     }
+//    MyBottomSheet bottomSheetFragment = new MyBottomSheet();
+//bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
 }
