@@ -31,7 +31,7 @@
                 android:id="@+id/item5"
                 android:title="Signout"
                 app:showAsAction="never"
-                android:icon="@drawable/ic_door"/>
+                android:icon="@drawable/key"/>
 
         </menu>
 
