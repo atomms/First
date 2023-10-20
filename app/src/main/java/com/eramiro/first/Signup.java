@@ -13,7 +13,7 @@ import java.util.Date;
 
 /**
  * This is the Signup
- *
+ * transformed into a calendar
  * @author ernesto
  * @see Login
  */
