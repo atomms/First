@@ -56,8 +56,8 @@ public class Main extends AppCompatActivity {
 
         //La vista dentro es un webview con permiso para zoom
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
-//        miVisorWeb.getSettings().setJavaScriptEnabled(true);
-//        miVisorWeb.getSettings().setBuiltInZoomControls(true);
+        miVisorWeb.getSettings().setJavaScriptEnabled(true);
+        miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
