@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First">
         <activity
-            android:name=".WrongActivity"
+            android:name=".LoginAlter"
             android:exported="false" />
         <activity
             android:name=".Splash"
