@@ -33,7 +33,7 @@
     <Button
         android:id="@+id/button4"
         android:text="Cancel"
-        app:layout_constraintEnd_toEndOf="@id/editTextNumberPassword"
+        app:layout_constraintEnd_toStartOf="@id/guideline5"
         app:layout_constraintStart_toEndOf="@id/button3"
         app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword"
         style="@style/OutlinedButton" />
@@ -47,17 +47,25 @@
 
          />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"
+
+        />
 
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:ems="10"
         android:inputType="text"
         android:text="Name"
         app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <EditText
@@ -67,6 +75,7 @@
         android:ems="10"
         android:inputType="numberPassword"
         android:text="Password"
+        app:layout_constraintEnd_toStartOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/editTextText" />
 
