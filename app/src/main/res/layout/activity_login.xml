@@ -84,26 +84,27 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <Button
         android:id="@+id/button"
+        style="@style/buttonflat"
         android:onClick="openMain"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/til2"
 
 
-        style="@style/buttonflat" />
+        app:layout_constraintTop_toBottomOf="@id/til2" />
 
     <Button
         android:id="@+id/buttoninverse"
         style="@style/buttonoutlined"
         android:layout_height="60dp"
+        android:onClick="openSignup"
         android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/button"
-        android:onClick="openSignup"
 
         />
 
@@ -120,7 +121,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.80" />
-
 
 
 
