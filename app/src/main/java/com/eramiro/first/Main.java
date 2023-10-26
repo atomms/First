@@ -9,6 +9,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,8 +57,11 @@ public class Main extends AppCompatActivity {
 
         //La vista dentro es un webview con permiso para zoom
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
-        miVisorWeb.getSettings().setJavaScriptEnabled(true);
-        miVisorWeb.getSettings().setBuiltInZoomControls(true);
+//        miVisorWeb.getSettings().setJavaScriptEnabled(true);
+//        miVisorWeb.getSettings().setBuiltInZoomControls(true);
+        WebSettings webSettings = miVisorWeb.getSettings();
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 

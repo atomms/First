@@ -13,7 +13,7 @@
         android:theme="@style/Theme.First">
         <activity
             android:name=".LoginAlter"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".Splash"
