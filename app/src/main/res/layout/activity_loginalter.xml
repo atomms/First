@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginAlter"
-    android:background="@color/teal_200">
+    android:background="@drawable/gradientalter">
 
     <Button
         android:id="@+id/button2"
@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/fucsia_200"/>
+        />
 
     <Button
         android:id="@+id/button3"
@@ -62,10 +62,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:hint="Name"
+        android:textColorHint="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toStartOf="@id/guideline5"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+    </EditText>
 
     <EditText
         android:id="@+id/editTextNumberPassword"
@@ -73,7 +76,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberPassword"
-        android:text="Password"
+        android:hint="Password"
+        android:textColorHint="@android:color/darker_gray"
         app:layout_constraintEnd_toStartOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/editTextText" />
