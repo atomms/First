@@ -40,7 +40,7 @@ public class Login extends AppCompatActivity {
 
 //    Glide for loading girls
         ImageView mGirl = findViewById(R.id.girl);
-        ImageView mLogo = findViewById(R.id.logo);
+//        ImageView mLogo = findViewById(R.id.logo);
 
         Glide.with(this)
               .load(R.drawable.girl)

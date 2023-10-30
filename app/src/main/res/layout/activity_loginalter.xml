@@ -21,9 +21,7 @@
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
         android:layout_marginRight="8dp"
-
         android:text="OK"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -36,7 +34,7 @@
         app:layout_constraintEnd_toStartOf="@id/guideline5"
         app:layout_constraintStart_toEndOf="@id/button3"
         app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword"
-        style="@style/OutlinedButton" />
+        style="@style/buttonoutlinedalter" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

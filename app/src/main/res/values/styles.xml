@@ -16,7 +16,7 @@
         <item name="android:textColor">@color/purple_500</item>
     </style>
 
-    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="buttonoutlinedalter" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="strokeColor">@color/fucsia_200</item>
