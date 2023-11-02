@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First">
         <activity
-            android:name=".LoginAlter"
-            android:exported="true" />
+            android:name=".LoginAlteris"
+            android:exported="true"
+            />
 
         <activity
             android:name=".Splash"
@@ -21,13 +22,13 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Login"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

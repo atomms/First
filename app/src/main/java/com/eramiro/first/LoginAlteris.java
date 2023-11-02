@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class LoginAlter extends AppCompatActivity {
+public class LoginAlteris extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loginalter);
+        setContentView(R.layout.activity_loginalteris);
     }
 }
