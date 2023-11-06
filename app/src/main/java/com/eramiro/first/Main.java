@@ -95,7 +95,7 @@ public class Main extends AppCompatActivity {
         builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
-        builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Scrolling", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...

@@ -54,7 +54,7 @@
             android:theme="@style/Theme.First" />
         <activity
             android:name=".ScrollingActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.First.NoActionBar" />
     </application>
