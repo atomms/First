@@ -50,7 +50,7 @@ public class Splash extends AppCompatActivity {
 //                .load(R.drawable.girl)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 .centerCrop()
-//                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
 //                .circleCrop()
                 .into(mSea);

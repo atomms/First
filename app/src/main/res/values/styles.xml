@@ -13,7 +13,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">60dp</item>
         <item name="android:backgroundTint">@color/button_custom</item>
-        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textColor">@color/fucsia_700</item>
     </style>
 
     <style name="buttonoutlinedalter" parent="Widget.MaterialComponents.Button.OutlinedButton">
