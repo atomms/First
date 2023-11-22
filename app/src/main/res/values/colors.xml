@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-->Cambiados colores<-->
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="fucsia_200">#F12369</color>
@@ -9,4 +9,5 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0b2ea3</color>
 </resources>
