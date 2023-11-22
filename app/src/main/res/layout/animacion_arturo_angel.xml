@@ -32,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="67dp"
         android:layout_marginTop="200dp"
+        android:fontFamily="monospace"
         android:text="NICESTART"
         android:textColor="@android:color/white"
         android:textSize="50sp"
