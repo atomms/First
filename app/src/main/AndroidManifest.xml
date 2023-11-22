@@ -18,7 +18,7 @@
             />
 
         <activity
-            android:name=".Splash"
+            android:name=".splashArturoAngel"
             android:exported="true"
             >
             <intent-filter>
