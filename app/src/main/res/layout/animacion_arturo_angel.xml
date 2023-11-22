@@ -21,7 +21,6 @@
         android:layout_height="250dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
@@ -32,12 +31,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="67dp"
-        android:layout_marginTop="76dp"
-        android:text="FiRST"
+        android:layout_marginTop="200dp"
+        android:text="NICESTART"
         android:textColor="@android:color/white"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="@id/animation_view"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="@id/animation_view"
         app:layout_constraintTop_toBottomOf="@id/animation_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
