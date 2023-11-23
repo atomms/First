@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
 
     defaultConfig {
         applicationId "com.eramiro.first"
-        minSdk 21
-        targetSdk 31
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -46,6 +46,9 @@ android {
 
 
 dependencies {
+
+    //Lottie
+    implementation("com.airbnb.android:lottie:6.1.0")
 
 //    classpath "gradle.plugin.com.vanniktech:gradle-android-javadoc-plugin:0.2.1"
 
