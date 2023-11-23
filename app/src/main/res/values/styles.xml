@@ -23,11 +23,20 @@
         <item name="cornerRadius">8dp</item>
     </style>
 
+
     <style name="splash_img">
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">100dp</item>
         <item name="android:backgroundTint">@color/button_custom</item>
         <item name="android:textColor">@color/purple_500</item>
+
+  <style name="loraItalic">
+      <item name="android:fontFamily">@font/lora0italic</item>
+  </style>
+
+    <style name="loraVariable">
+        <item name="android:fontFamily">@font/lora0variable</item>
+
     </style>
 
 </resources>
