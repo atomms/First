@@ -15,29 +15,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/logosplash"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="420dp"
-        android:src="@drawable/ic_thunder"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        style = "@style/splash_img"/>
 
-
-    </ImageView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/barriecito"
-        android:text="@string/app_name"
-        android:textColor="@android:color/white"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="@id/logosplash"
-        app:layout_constraintStart_toStartOf="@id/logosplash"
-        app:layout_constraintTop_toBottomOf="@id/logosplash">
-
-    </TextView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/thunder"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
