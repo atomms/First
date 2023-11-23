@@ -29,15 +29,17 @@
 
     </View>
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="48dp"
-        android:src="@drawable/ic_thunder"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_thunder_animation" />
 
 
 
@@ -94,6 +96,8 @@
         style="@style/buttonflat"
         android:onClick="openMain"
         android:text="@string/login"
+        android:fontFamily="@font/smooch_sans_bold"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/til2" />
@@ -104,6 +108,8 @@
         android:layout_height="60dp"
         android:onClick="openSignup"
         android:text="@string/signup"
+        android:fontFamily="@font/smooch_sans_bold"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/button"
