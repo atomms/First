@@ -14,18 +14,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/logosplash"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="420dp"
-        android:src="@drawable/ic_thunder"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/cubitos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-    </ImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,9 +32,9 @@
         android:text="@string/app_name"
         android:textColor="@android:color/white"
         android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="@id/logosplash"
-        app:layout_constraintStart_toStartOf="@id/logosplash"
-        app:layout_constraintTop_toBottomOf="@id/logosplash">
+        app:layout_constraintEnd_toEndOf="@id/animationView"
+        app:layout_constraintStart_toStartOf="@id/animationView"
+        app:layout_constraintTop_toBottomOf="@id/animationView">
 
     </TextView>
 
