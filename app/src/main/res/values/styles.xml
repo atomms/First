@@ -23,4 +23,12 @@
         <item name="cornerRadius">8dp</item>
     </style>
 
+  <style name="loraItalic">
+      <item name="android:fontFamily">@font/lora0italic</item>
+  </style>
+
+    <style name="loraVariable">
+        <item name="android:fontFamily">@font/lora0variable</item>
+    </style>
+
 </resources>
