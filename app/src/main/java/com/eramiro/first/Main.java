@@ -235,8 +235,8 @@ public class Main extends AppCompatActivity {
 //
 //                snackbar.show();
 
-                return true;
-
+//                return true;
+//
             case R.id.item2:
                 Toast toast2 = Toast.makeText(this, "Downloading item...",
                         Toast.LENGTH_LONG);
