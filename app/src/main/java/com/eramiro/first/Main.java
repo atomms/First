@@ -217,25 +217,27 @@ public class Main extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.item1:
-                Toast toast = Toast.makeText(this, "Item copied",
-                        Toast.LENGTH_LONG);
-                toast.show();
+//                Toast toast = Toast.makeText(this, "Item copied",
+//                        Toast.LENGTH_LONG);
+//                toast.show();
 
-//                final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
-//
-//                Snackbar snackbar = Snackbar
-//                        .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
-//                        .setAction("UNDO", new View.OnClickListener() {
-//                            @Override
-//                            public void onClick(View view) {
-//                                Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
-//                                snackbar1.show();
-//                            }
-//                        });
-//
-//                snackbar.show();
+         // Implementación del SNACKBAR
 
-//                return true;
+                final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
+
+                Snackbar snackbar = Snackbar
+                        .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
+                        .setAction("UNDO", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
+                                snackbar1.show();
+                            }
+                        });
+
+                snackbar.show();
+
+                return true;
 //
             case R.id.item2:
                 Toast toast2 = Toast.makeText(this, "Downloading item...",
