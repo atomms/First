@@ -5,6 +5,7 @@ import static android.app.PendingIntent.getActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -39,6 +41,15 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            // Configura el color del título, por ejemplo
+            actionBar.setTitle(Html.fromHtml("<font color=\"#4D0A20\">Webview</font>"));
+        }
+
+
 //        getSupportActionBar().setBackgroundDrawable(getDrawable(R.drawable.transparent));
 
 
@@ -95,7 +106,7 @@ public class Main extends AppCompatActivity {
         builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
-        builder.setPositiveButton("Scrolling", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Go scrolling", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
@@ -116,7 +127,7 @@ public class Main extends AppCompatActivity {
             }
         });
 
-        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("Exit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
