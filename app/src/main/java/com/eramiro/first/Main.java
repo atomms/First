@@ -103,7 +103,7 @@ public class Main extends AppCompatActivity {
         builder.setCancelable(false);
 
         // un XML a medida para el diálogo
-        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+//        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
         // add the buttons
         builder.setPositiveButton("Go scrolling", new DialogInterface.OnClickListener() {
