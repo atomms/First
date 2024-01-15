@@ -60,6 +60,7 @@ public class MainBab extends AppCompatActivity {
         });
 
         //click event en el Bottom bar menu item
+
         bottomAppBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {

@@ -21,7 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainBn extends AppCompatActivity {
 
-    private ActivityMainBnBinding binding;
+//    private ActivityMainBnBinding binding;
     private MenuItem prevMenuItem;
     private SectionsPagerAdapter sectionsPagerAdapter;
 
