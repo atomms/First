@@ -4,16 +4,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
+    <View
         android:id="@+id/badge_text_view"
         android:layout_width="8dp"
         android:layout_height="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
-
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@android:color/white"
         android:background="@drawable/circle_shape"
         />
 
