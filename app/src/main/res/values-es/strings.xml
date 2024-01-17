@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">NiCESTART</string>
     <string name="login">Ingreso</string>
     <string name="signup">Registro</string>
     <string name="vaccinate">Vacunar</string>
