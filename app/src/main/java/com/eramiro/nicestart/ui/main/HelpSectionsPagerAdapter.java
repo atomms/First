@@ -1,4 +1,4 @@
-package com.eramiro.first.ui.main;
+package com.eramiro.nicestart.ui.main;
 
 import android.content.Context;
 
@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.eramiro.first.fragments.HPage1;
-import com.eramiro.first.fragments.HPage2;
-import com.eramiro.first.fragments.HPage3;
+import com.eramiro.nicestart.fragments.HPage1;
+import com.eramiro.nicestart.fragments.HPage2;
+import com.eramiro.nicestart.fragments.HPage3;
 
 
 /**

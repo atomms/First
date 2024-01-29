@@ -1,4 +1,4 @@
-package com.eramiro.first;
+package com.eramiro.nicestart;
 
 import android.os.Bundle;
 import android.widget.TextView;

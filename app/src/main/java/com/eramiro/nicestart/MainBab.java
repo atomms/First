@@ -1,7 +1,6 @@
-package com.eramiro.first;
+package com.eramiro.nicestart;
 
 import android.os.Bundle;
-import android.service.controls.actions.FloatAction;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -9,7 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.eramiro.first.R;
+import com.eramiro.nicestart.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

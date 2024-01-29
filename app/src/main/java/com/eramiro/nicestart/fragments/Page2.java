@@ -1,20 +1,21 @@
-package com.eramiro.first.fragments;
+package com.eramiro.nicestart.fragments;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.fragment.app.Fragment;
-
-import com.eramiro.first.R;
+import com.eramiro.nicestart.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Page1#newInstance} factory method to
+ * Use the {@link Page2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HPage1 extends Fragment {
+public class Page2 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +26,7 @@ public class HPage1 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public HPage1() {
+    public Page2() {
         // Required empty public constructor
     }
 
@@ -35,11 +36,11 @@ public class HPage1 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Fragment1.
+     * @return A new instance of fragment Page2.
      */
     // TODO: Rename and change types and number of parameters
-    public static Page1 newInstance(String param1, String param2) {
-        Page1 fragment = new Page1();
+    public static Page2 newInstance(String param1, String param2) {
+        Page2 fragment = new Page2();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,6 +61,6 @@ public class HPage1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.hpage1, container, false);
+        return inflater.inflate(R.layout.fragment_page2, container, false);
     }
 }

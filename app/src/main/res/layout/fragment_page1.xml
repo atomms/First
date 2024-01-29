@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.eramiro.first.fragments.Page1"
+    tools:context="com.eramiro.nicestart.fragments.Page1"
     android:background="@color/fucsia_700"
     android:alpha="0.5">
 

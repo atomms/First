@@ -1,4 +1,4 @@
-package com.eramiro.first;
+package com.eramiro.nicestart;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,8 +8,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.eramiro.first.databinding.ActivityMainBinding;
-import com.eramiro.first.ui.main.HelpSectionsPagerAdapter;
+import com.eramiro.nicestart.databinding.ActivityMainBinding;
+import com.eramiro.nicestart.ui.main.HelpSectionsPagerAdapter;
 
 
 public class Help extends AppCompatActivity {

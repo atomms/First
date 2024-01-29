@@ -1,4 +1,4 @@
-package com.eramiro.first.ui.main;
+package com.eramiro.nicestart.ui.main;
 
 import android.content.Context;
 
@@ -6,11 +6,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.eramiro.first.R;
-import com.eramiro.first.fragments.Page1;
-import com.eramiro.first.fragments.Page2;
-import com.eramiro.first.fragments.Page3;
-import com.eramiro.first.fragments.Page4;
+import com.eramiro.nicestart.R;
+import com.eramiro.nicestart.fragments.Page1;
+import com.eramiro.nicestart.fragments.Page2;
+import com.eramiro.nicestart.fragments.Page3;
+import com.eramiro.nicestart.fragments.Page4;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

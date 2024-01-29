@@ -1,4 +1,4 @@
-package com.eramiro.first;
+package com.eramiro.nicestart;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.eramiro.first.R;
+import com.eramiro.nicestart.R;
 
 /**
  * This is the login

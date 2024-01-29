@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context="com.eramiro.first.Login">
+    tools:context="com.eramiro.nicestart.Login">
 
 
     <!--    android:src="@drawable/girl"-->

@@ -1,4 +1,4 @@
-package com.eramiro.first;
+package com.eramiro.nicestart;
 
 import androidx.appcompat.app.AppCompatActivity;
 
