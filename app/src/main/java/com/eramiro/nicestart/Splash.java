@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
+import android.widget.MediaController;
+import android.widget.VideoView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -39,6 +41,24 @@ public class Splash extends AppCompatActivity {
         // startAnimation lo aplicamos al imageview del logo
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.blink);
         thunder.startAnimation(myanim);
+
+        VideoView videoView = findViewById(R.id.videoView);
+
+        // Crea un objeto MediaController para controles de video (play, pause, etc.)
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+
+        // Establece la dirección del archivo de video en VideoView
+//        Aquí para videos en un paquete accesible
+//        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.mi_video);
+//        Para youtube hay que implementar antes el API
+//        Uri uri = Uri.parse("https://youtu.be/_3EuiU1qdpE?si=_QHcZgujDvT3peUP");
+//        videoView.setMediaController(mediaController);
+//        videoView.setVideoURI(uri);
+//        videoView.requestFocus();
+
+        // Iniciar el video
+        videoView.start();
 
 
         //    Glide for loading girls
