@@ -9,4 +9,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <palette>
+        <color name='Green-Globe-On-Moss---Environmental-Concept
+-1' rgb='042940' r='4' g='40' b='63' />
+        <color name='Green-Globe-On-Moss---Environmental-Concept
+-2' rgb='005C53' r='0' g='91' b='82' />
+        <color name='Green-Globe-On-Moss---Environmental-Concept
+-3' rgb='9FC131' r='158' g='193' b='49' />
+        <color name='Green-Globe-On-Moss---Environmental-Concept
+-4' rgb='DBF227' r='219' g='242' b='38' />
+        <color name='Green-Globe-On-Moss---Environmental-Concept
+-5' rgb='D6D58E' r='214' g='212' b='142' />
+    </palette>
+
 </resources>
