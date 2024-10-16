@@ -16,15 +16,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
+        android:src="@drawable/girl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    android:src="@drawable/girl"-->
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.7"
+        android:alpha="0.0"
         android:background="@drawable/gradient">
 
     </View>
@@ -40,8 +40,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
@@ -50,8 +48,7 @@
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/logo"
-        app:startIconDrawable="@drawable/usericon"
-        >
+        app:startIconDrawable="@drawable/usericon">
 
         <EditText
             android:layout_width="match_parent"
@@ -107,7 +104,6 @@
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/button"
-
         />
 
     <androidx.constraintlayout.widget.Guideline
