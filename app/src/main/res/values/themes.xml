@@ -17,6 +17,8 @@
 
     </style>
 
+    <style name="Theme.Nicestart.ActionBar" parent="Theme.MaterialComponents.DayNight">
+    </style>
 
     <style name="ActionTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="android:statusBarColor">@color/fucsia_700</item>
@@ -25,8 +27,26 @@
 
         <item name="actionBarStyle">@style/MyActionBar</item>
         <!--        <item name="alertDialogStyle">@style/MyDialog</item>-->
-        <!--                <item name="android:windowTranslucentStatus">true</item>-->
+                        <item name="android:windowTranslucentStatus">true</item>
     </style>
+
+    <!-- Tema personalizado con ActionBar transparente -->
+    <style name="Theme.Nicestart.ActionBar.Transparent" parent="Theme.MaterialComponents.DayNight">
+        <!-- Mantener el ActionBar y hacerlo superponer el contenido -->
+        <item name="windowActionBar">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <!-- Hacer el fondo de la ventana del contenido transparente -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Estilo del ActionBar -->
+        <item name="actionBarStyle">@style/TransparentActionBar</item>
+    </style>
+
+    <!-- Estilo personalizado para hacer el ActionBar transparente -->
+    <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item> <!-- Quitar sombra si es necesario -->
+    </style>
+
 
     <style name="MyActionBar" parent="Widget.MaterialComponents.Light.ActionBar.Solid">
         <item name="background">@color/fucsia_200</item>

@@ -84,7 +84,7 @@
     <Button
         android:id="@+id/button"
         android:onClick="openMain"
-        android:text="Vaccinate"
+        android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/til2"

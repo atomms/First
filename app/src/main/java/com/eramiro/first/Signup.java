@@ -1,6 +1,8 @@
 package com.eramiro.first;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,4 +42,17 @@ public class Signup extends AppCompatActivity {
 //        view.setText(date);
 //
     }
+
+    // Method for Signup button
+    public void openLogin(View v) {
+        Intent intent = new Intent(Signup.this, Login.class);
+        startActivity(intent);
+    }
+
+    // Method for Signup button
+    public void openMain(View v) {
+        Intent intent = new Intent(Signup.this, Main.class);
+        startActivity(intent);
+    }
+
 }
