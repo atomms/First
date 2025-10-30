@@ -1,28 +1,28 @@
 <!--<?xml version="1.0" encoding="utf-8"?>-->
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"
-    >
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
     <gradient
-        android:startColor="@color/fucsia_200"
+        android:angle="270"
         android:endColor="@color/teal_700"
-        android:angle="270">
+        android:startColor="@color/fucsia_200">
 
     </gradient>
 
-<!--</shape>-->
+    <!--</shape>-->
 
 
-<!--<shape-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:shape="rectangle">-->
+    <!--<shape-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:shape="rectangle">-->
 
-<!--    <gradient-->
-<!--        android:type="sweep"-->
-<!--        android:centerX="50%"-->
-<!--        android:centerY="50%"-->
-<!--        android:startColor="#FF0000"-->
-<!--        android:centerColor="#0068FF"-->
-<!--        android:endColor="#F70000"-->
-<!--        />-->
+    <!--    <gradient-->
+    <!--        android:type="sweep"-->
+    <!--        android:centerX="50%"-->
+    <!--        android:centerY="50%"-->
+    <!--        android:startColor="#FF0000"-->
+    <!--        android:centerColor="#0068FF"-->
+    <!--        android:endColor="#F70000"-->
+    <!--        />-->
 
 </shape>
 
