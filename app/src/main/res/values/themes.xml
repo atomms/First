@@ -43,7 +43,9 @@
     <!-- Estilo personalizado para hacer el ActionBar transparente -->
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@android:color/transparent</item>
+        <item name="displayOptions">showHome</item>
         <item name="android:elevation">0dp</item> <!-- Quitar sombra si es necesario -->
+
     </style>
 
 

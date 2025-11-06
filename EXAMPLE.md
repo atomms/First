@@ -28,7 +28,7 @@ Reference style [link][1].
 Images
 ------
 
-Image: ![My image](http://www.foo.bar/image.png)
+Image: ![My image](img/login.png)
 
 Headers
 -------
@@ -41,7 +41,7 @@ Headers
 ###### Sixth level title
 
 ### Title with [link](http://localhost)
-### Title with ![image](http://localhost)
+### Title with ![image](img/login.png)
 
 Code
 ----

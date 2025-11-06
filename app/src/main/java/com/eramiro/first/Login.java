@@ -74,10 +74,9 @@ public class Login extends AppCompatActivity {
     // Method for Login button
     public void openMain(View v) {
         Intent intent = new Intent(Login.this, Main.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-
     }
 
     // Method for Signup button
