@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:ordering="sequentially"
+
     android:fillAfter="true"
     >
-
+<!--    android:ordering="sequentially"-->
     <translate
         android:duration="50"
         android:fromXDelta="2%"
         android:fromYDelta="-2%"
         android:toXDelta="5%"
         android:toYDelta="2%"
-        android:interpolator="@android:anim/cycle_interpolator"
         android:repeatCount="20" />
+
+<!--    android:interpolator="@android:anim/bounce_interpolator"-->
 
     <alpha
         android:startOffset="2000"
