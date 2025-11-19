@@ -54,14 +54,30 @@ public class Main extends AppCompatActivity {
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
-        //La vista dentro es un webview con permiso para zoom
+
+
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
+
+        String html = "<html>" +
+                "<head><style>" +
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
+                "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
+                "</style></head>" +
+                "<body>" +
+                "<img src='https://thispersondoesnotexist.com' />" +
+                "</body></html>";
+
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+
+
+        //La vista dentro es un webview con permiso para zoom
+
 //        miVisorWeb.getSettings().setJavaScriptEnabled(true);
 //        miVisorWeb.getSettings().setBuiltInZoomControls(true);
-        WebSettings webSettings = miVisorWeb.getSettings();
-        webSettings.setLoadWithOverviewMode(true);
-        webSettings.setUseWideViewPort(true);
-        miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
+//        WebSettings webSettings = miVisorWeb.getSettings();
+//        webSettings.setLoadWithOverviewMode(true);
+//        webSettings.setUseWideViewPort(true);
+//        miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
     }
 
