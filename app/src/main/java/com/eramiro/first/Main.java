@@ -55,6 +55,7 @@ public class Main extends AppCompatActivity {
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
 
+//  Webview cargando HTML para que la imagen ocupe todo el activity
 
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
 
