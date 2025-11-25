@@ -5,8 +5,9 @@
     <item
         android:id="@+id/item2"
         android:title="Settings"
-        android:icon="@drawable/ic_planet"
         app:showAsAction="never" />
+
+<!--        android:icon="@drawable/ic_planet"-->
 
     <item
         android:id="@+id/item1"

@@ -44,6 +44,7 @@ public class Main extends AppCompatActivity {
         // casting a la vista a la que aplicamos un menu contextual
         // y la registramos
 
+
         WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
 
