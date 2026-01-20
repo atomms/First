@@ -4,6 +4,7 @@ import static android.app.PendingIntent.getActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -62,8 +63,8 @@ public class Main extends AppCompatActivity {
 
         String html = "<html>" +
                 "<head><style>" +
-                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
-                "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }"
+                + "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
                 "</style></head>" +
                 "<body>" +
                 "<img src='https://thispersondoesnotexist.com' />" +
@@ -195,6 +196,9 @@ public class Main extends AppCompatActivity {
 
         if (id == R.id.item1) {
 //            showAlertDialogButtonClicked(Main.this);
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:123456789"));
+            startActivity(intent);
 
             Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="login">Ingreso</string>
-    <string name="signup">Registro</string>
+    <string name="login">Entrar</string>
+    <string name="signup">Registrar</string>
     <string name="vaccinate">Vacunar</string>
     <string name="hello_blank_fragment">hola fragment en blanco</string>
-    <string name="action_settings">Configuración</string>
     <string name="username">Usuario</string>
 </resources>

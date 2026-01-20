@@ -11,8 +11,8 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
 
+<!--        custom bars-->
         <item name="android:statusBarColor">@color/fucsia_700</item>
-
         <item name="bottomNavigationStyle">@style/BottomNavigation</item>
 
     </style>

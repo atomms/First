@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.eramiro.first.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
@@ -21,11 +23,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
  */
 public class MainBab extends AppCompatActivity {
 
+    private DrawerLayout drawerLayout;
+    private BottomAppBar bottomAppBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainbab);
+        setContentView(R.layout.activity_mainbabdrawer);
 
 //        this.getSupportActionBar().setDisplayShowCustomEnabled(true);
 //
@@ -39,8 +44,9 @@ public class MainBab extends AppCompatActivity {
 //        this.getSupportActionBar().setCustomView(v);
 
         // cast al xml
-        BottomAppBar bottomAppBar = findViewById(R.id.bottom_app_bar);
+        bottomAppBar = findViewById(R.id.bottom_app_bar);
         FloatingActionButton myfab = findViewById(R.id.fab);
+        drawerLayout = findViewById(R.id.drawerLayout);
 
         //click event en el  FAB
         myfab.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +62,8 @@ public class MainBab extends AppCompatActivity {
             public void onClick(View view) {
 //                Toast.makeText(MainBab.this, "Menu clicked", Toast.LENGTH_SHORT).show();
 //                sheetBehavior = BottomSheetBehavior.from(sheet);
-                showBottomSheetDialog();
+//                showBottomSheetDialog();
+                drawerLayout.openDrawer(GravityCompat.START);
             }
 
 
