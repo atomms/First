@@ -60,16 +60,17 @@ public class Main extends AppCompatActivity {
 
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
 
-        String html = "<html>" +
-                "<head><style>" +
-                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
-                "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
-                "</style></head>" +
-                "<body>" +
-                "<img src='https://thispersondoesnotexist.com' />" +
-                "</body></html>";
-
-        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+//        String html = "<html>" +
+//                "<head><style>" +
+//                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
+//                "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
+//                "</style></head>" +
+//                "<body>" +
+//                "<img src='https://thispersondoesnotexist.com' />" +
+//                "</body></html>";
+//
+//        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+        miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
 
         //La vista dentro es un webview con permiso para zoom
