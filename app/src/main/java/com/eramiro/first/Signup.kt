@@ -1,15 +1,9 @@
-package com.eramiro.first;
+package com.eramiro.first
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import android.content.Intent
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * This is the Signup
@@ -17,42 +11,22 @@ import java.util.Date;
  * @author ernesto
  * @see Login
  */
-public class Signup extends AppCompatActivity {
+class Signup : AppCompatActivity() {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
-
-        //added a transparent shape to the traditional action bar
-//        getSupportActionBar().setBackgroundDrawable(getDrawable(R.drawable.transparent));
-//
-//        TextView dateView = (TextView) findViewById(R.id.mydate);
-//        setDate(dateView);
-//
-//    }
-//
-//    public void setDate(TextView view) {
-////        String str = String.format("%tc", new Date());
-////        view.setText(str);
-////
-//        Date today = Calendar.getInstance().getTime();//getting date
-//        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy"); //formating according to my needs
-//        String date = formatter.format(today);
-//        view.setText(date);
-//
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_signup)
     }
 
     // Method for Signup button
-    public void openLogin(View v) {
-        Intent intent = new Intent(Signup.this, Login.class);
-        startActivity(intent);
+    fun openLogin(v: View?) {
+        val intent = Intent(this@Signup, Login::class.java)
+        startActivity(intent)
     }
 
     // Method for Signup button
-    public void openMain(View v) {
-        Intent intent = new Intent(Signup.this, Main.class);
-        startActivity(intent);
+    fun openMain(v: View?) {
+        val intent = Intent(this@Signup, Main::class.java)
+        startActivity(intent)
     }
-
 }

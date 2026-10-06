@@ -1,12 +1,11 @@
-package com.eramiro.first;
+package com.eramiro.first
 
-import android.os.Bundle;
-import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import android.os.Bundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 /**
  * This is the Signup
@@ -14,29 +13,20 @@ import java.util.Calendar;
  * @author ernesto
  * @see Login
  */
-public class Date extends AppCompatActivity {
+class Date : AppCompatActivity() {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_date);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_date)
 
-        //added a transparent shape to the traditional action bar
-//        getSupportActionBar().setBackgroundDrawable(getDrawable(R.drawable.transparent));
-
-        TextView dateView = (TextView) findViewById(R.id.mydate);
-        setDate(dateView);
-
+        val dateView = findViewById<TextView>(R.id.mydate)
+        dateView?.let { setDate(it) }
     }
 
-    public void setDate(TextView view) {
-//        String str = String.format("%tc", new Date());
-//        view.setText(str);
-//
-        java.util.Date today = Calendar.getInstance().getTime();//getting date
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy"); //formating according to my needs
-        String date = formatter.format(today);
-        view.setText(date);
-
+    fun setDate(view: TextView) {
+        val today = Calendar.getInstance().time
+        val formatter = SimpleDateFormat("dd/MM/yy", Locale.getDefault())
+        val date = formatter.format(today)
+        view.text = date
     }
 }

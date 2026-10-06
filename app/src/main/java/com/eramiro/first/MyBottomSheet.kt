@@ -1,4 +1,3 @@
-package com.eramiro.first;
+package com.eramiro.first
 
-public class MyBottomSheet {
-}
+class MyBottomSheet

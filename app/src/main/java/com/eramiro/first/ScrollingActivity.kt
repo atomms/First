@@ -1,41 +1,29 @@
-package com.eramiro.first;
+package com.eramiro.first
 
-import android.os.Bundle;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.eramiro.first.databinding.ActivityScrollingBinding
+import com.google.android.material.snackbar.Snackbar
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+class ScrollingActivity : AppCompatActivity() {
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+    private lateinit var binding: ActivityScrollingBinding
 
-import android.view.View;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-import com.eramiro.first.databinding.ActivityScrollingBinding;
+        binding = ActivityScrollingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-public class ScrollingActivity extends AppCompatActivity {
+        val toolbar = binding.toolbar
+        setSupportActionBar(toolbar)
+        val toolBarLayout = binding.toolbarLayout
+        toolBarLayout.title = title
 
-    private ActivityScrollingBinding binding;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        binding = ActivityScrollingBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        Toolbar toolbar = binding.toolbar;
-        setSupportActionBar(toolbar);
-        CollapsingToolbarLayout toolBarLayout = binding.toolbarLayout;
-        toolBarLayout.setTitle(getTitle());
-
-        FloatingActionButton fab = binding.fab;
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        val fab = binding.fab
+        fab?.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        }
     }
 }

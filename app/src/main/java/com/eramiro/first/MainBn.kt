@@ -1,131 +1,112 @@
-package com.eramiro.first;
+@file:Suppress("RestrictedApi")
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
+package com.eramiro.first
 
-import androidx.annotation.IdRes;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
-import com.eramiro.first.ui.main.SectionsPagerAdapter;
-import com.eramiro.first.databinding.ActivityMainBnBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
+import android.annotation.SuppressLint
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.widget.Toast
+import androidx.annotation.IdRes
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
+import com.eramiro.first.ui.main.SectionsPagerAdapter
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 
 /**
  * gradle update
  */
-public class MainBn extends AppCompatActivity {
+@SuppressLint("RestrictedApi")
+class MainBn : AppCompatActivity() {
 
-//    private ActivityMainBnBinding binding;
-    private MenuItem prevMenuItem;
-    private SectionsPagerAdapter sectionsPagerAdapter;
+    private lateinit var sectionsPagerAdapter: SectionsPagerAdapter
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_bn);
-//        binding = ActivityMainBnBinding.inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main_bn)
 
-        // Configuración del adaptador para manejar fragmentos en el ViewPager
-        sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager1 = findViewById(R.id.view_pager);
-        viewPager1.setAdapter(sectionsPagerAdapter);
+        sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
+        val viewPager1 = findViewById<ViewPager>(R.id.view_pager)
+        viewPager1.adapter = sectionsPagerAdapter
 
+        val dotsIndicator = findViewById<DotsIndicator>(R.id.dots_indicator)
+        dotsIndicator.attachTo(viewPager1)
 
-        // ... inside your Activity or Fragment ...
+        val mybottomNavView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
-        DotsIndicator dotsIndicator = findViewById(R.id.dots_indicator);
-//        ViewPager viewPager = findViewById(R.id.view_pager);
-//        ViewPagerAdapter adapter = new ViewPagerAdapter();
-//        viewPager.setAdapter(adapter);
-        dotsIndicator.attachTo(viewPager1);
+        val bottomNavigationMenuView = mybottomNavView.getChildAt(0) as BottomNavigationMenuView
+        val v = bottomNavigationMenuView.getChildAt(2)
+        val itemView = v as BottomNavigationItemView
 
+        LayoutInflater.from(this).inflate(R.layout.layout_badge, itemView, true)
 
-        // Configuración de la barra de navegación inferior
-        BottomNavigationView mybottomNavView = findViewById(R.id.bottom_navigation);
-
-        // Crear badges
-        BottomNavigationMenuView bottomNavigationMenuView =
-                (BottomNavigationMenuView) mybottomNavView.getChildAt(0);
-        View v = bottomNavigationMenuView.getChildAt(2);
-        BottomNavigationItemView itemView = (BottomNavigationItemView) v;
-
-        LayoutInflater.from(this)
-                .inflate(R.layout.layout_badge, itemView, true);
-
-        // Manejo de la selección de ítems en la barra de navegación
-        mybottomNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.likes) {
-                    item.setChecked(true);
-                    Toast.makeText(MainBn.this, "Likes clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, item.getItemId());
-                    viewPager1.setCurrentItem(0);
-                } else if (item.getItemId() == R.id.add) {
-                    item.setChecked(true);
-                    Toast.makeText(MainBn.this, "Add clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, item.getItemId());
-                    viewPager1.setCurrentItem(1);
-                } else if (item.getItemId() == R.id.browse) {
-                    item.setChecked(true);
-                    Toast.makeText(MainBn.this, "Browse clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, item.getItemId());
-                    viewPager1.setCurrentItem(2);
-                } else if (item.getItemId() == R.id.personal) {
-                    item.setChecked(true);
-                    Toast.makeText(MainBn.this, "Personal clicked.", Toast.LENGTH_SHORT).show();
-                    removeBadge(mybottomNavView, item.getItemId());
-                    viewPager1.setCurrentItem(3);
+        @Suppress("DEPRECATION")
+        mybottomNavView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.likes -> {
+                    item.isChecked = true
+                    Toast.makeText(this@MainBn, "Likes clicked.", Toast.LENGTH_SHORT).show()
+                    removeBadge(mybottomNavView, item.itemId)
+                    viewPager1.currentItem = 0
+                    true
                 }
-                return true;
+                R.id.add -> {
+                    item.isChecked = true
+                    Toast.makeText(this@MainBn, "Add clicked.", Toast.LENGTH_SHORT).show()
+                    removeBadge(mybottomNavView, item.itemId)
+                    viewPager1.currentItem = 1
+                    true
+                }
+                R.id.browse -> {
+                    item.isChecked = true
+                    Toast.makeText(this@MainBn, "Browse clicked.", Toast.LENGTH_SHORT).show()
+                    removeBadge(mybottomNavView, item.itemId)
+                    viewPager1.currentItem = 2
+                    true
+                }
+                R.id.personal -> {
+                    item.isChecked = true
+                    Toast.makeText(this@MainBn, "Personal clicked.", Toast.LENGTH_SHORT).show()
+                    removeBadge(mybottomNavView, item.itemId)
+                    viewPager1.currentItem = 3
+                    true
+                }
+                else -> false
             }
-        });
+        }
 
-        // Escucha de cambios en el ViewPager para sincronizar con la barra de navegación
-        viewPager1.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                // No se necesita manejar este evento
+        viewPager1.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
             }
 
-            @Override
-            public void onPageSelected(int position) {
-//                if (prevMenuItem != null) {
-//                    prevMenuItem.setChecked(false);
-//                } else {
-//                    mybottomNavView.getMenu().getItem(0).setChecked(false);
-//                }
-                mybottomNavView.getMenu().getItem(position).setChecked(true);
-                removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
+            override fun onPageSelected(position: Int) {
+                mybottomNavView.menu.getItem(position).isChecked = true
+                removeBadge(mybottomNavView, mybottomNavView.menu.getItem(position).itemId)
             }
 
-            @Override
-            public void onPageScrollStateChanged(int state) {
-                // No se necesita manejar este evento
+            override fun onPageScrollStateChanged(state: Int) {
             }
-        });
+        })
     }
 
-    /**
-     * Remove badge.
-     *
-     * @param bottomNavigationView the bottom navigation view
-     * @param itemId               the item id
-     */
-    public static void removeBadge(BottomNavigationView bottomNavigationView, @IdRes int itemId) {
-        BottomNavigationItemView itemView = bottomNavigationView.findViewById(itemId);
-
-        if (itemView.getChildCount() == 3) {
-            itemView.removeViewAt(2);
+    companion object {
+        /**
+         * Remove badge.
+         *
+         * @param bottomNavigationView the bottom navigation view
+         * @param itemId               the item id
+         */
+        @JvmStatic
+        @SuppressLint("RestrictedApi")
+        fun removeBadge(bottomNavigationView: BottomNavigationView, @IdRes itemId: Int) {
+            val itemView = bottomNavigationView.findViewById<BottomNavigationItemView>(itemId)
+            itemView?.let {
+                if (it.childCount == 3) {
+                    it.removeViewAt(2)
+                }
+            }
         }
     }
 }
