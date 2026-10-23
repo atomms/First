@@ -1,17 +1,18 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt' // Necesario para que Glide funcione con Kotlin
 }
 
 android {
-    compileSdk 35
     namespace 'com.eramiro.first'
-
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.eramiro.first"
         minSdk 21
-        targetSdkVersion defaultTargetSdkVersion
+        // Se cambia la variable por el valor directo para evitar errores de compilación
+        targetSdk 35
         versionCode 2
         versionName "1.1"
 
@@ -24,60 +25,49 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
     buildFeatures {
         viewBinding true
     }
 }
 
-//android.libraryVariants.all { variant ->
-//
-//    task("generate${variant.name}Javadoc", type: Javadoc) {
-//        description "Generates Javadoc for $variant.name."
-//        source = variant.javaCompile.source
-//        ext.androidJar = "${android.plugin.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
-//        classpath = files(variant.javaCompile.classpath.files) + files(ext.androidJar)
-//    }
-//
-//}
-
-
 dependencies {
-
+    // Kotlin y Core KTX (Fundamentales para Kotlin)
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.24"
+    implementation 'androidx.core:core-ktx:1.13.1'
 
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.activity:activity:1.10.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // UI y Componentes (Actualizados a las versiones detectadas en tu proyecto)
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    // Activity y Lifecycle con extensiones Kotlin (KTX)
+    implementation 'androidx.activity:activity-ktx:1.10.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.8.3'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.3'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.3'
 
+    // Glide - Configurado para Kotlin
     implementation 'com.github.bumptech.glide:glide:4.16.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    kapt 'com.github.bumptech.glide:compiler:4.16.0'
 
-    implementation("com.tbuonomo:dotsindicator:5.1.0")
+    // Otras librerías
+    implementation "com.tbuonomo:dotsindicator:5.1.0"
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
-
-
-
-//    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
-//    implementation 'com.alespero:expandable-cardview:0.8'
-
-
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
-
